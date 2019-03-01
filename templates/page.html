@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>{{ page.title }} | Jordan Shurmer</title>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{{ get_url(path='legero.css') }}">
+    </head>
+
+    <body>
+
+        <main>
+            <article itemscope itemtype="https://schema.org/Article">
+
+                <h1 itemprop="headline name">{{ page.title }}</h1>
+
+                <div id="metadata">
+                    By <a href="/about" itemprop="author publisher">{{ page.extra.author | default(value="Jordan Shurmer")}}</a>.
+                    Published <meta itemprop="datePublished" content="{{ page.date }}">{{ page.date }}
+
+                    <nav class="breadcrumbs">
+                        <ol>
+                            {% for path in page.ancestors %}
+                                {% set section = get_section(path=path) %}
+                                <li><a href="{{ section.permalink }}">{{ section.title }}</a></li>
+                            {% endfor %}
+                        </ol>
+                    </nav>
+
+                </div>
+
+
+                <p itemprop="description">
+                {{ page.description }}
+                </p>
+
+                <ol id="toc" class="toc">
+                {% for h1 in page.toc %}
+                    <li>
+                        <a href="{{ h1.permalink }}">{{ h1.title }}</a>
+                        {% if h1.children %}
+                            <ol>
+                            {% for h2 in h1.children %}
+                                <li><a href="{{ h2.permalink }}">{{ h2.title }}</a></li>
+                            {% endfor %}
+                            </ol>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+                </ol>
+
+                <section itemprop="articleBody">
+                    {{ page.content | safe}}
+                </section>
+            </article>
+        </main>
+
+        <script src="{{ get_url(path='legero.js') }}"></script>
+
+    </body>
+</html>
+

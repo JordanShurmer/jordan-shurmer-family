@@ -1,0 +1,311 @@
+@import 'font/css/legero';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Spectral:500');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+main {
+    width: 95%;
+    margin: auto;
+}
+
+@media (min-width: 780px) {
+    main {
+        width: 60%;
+        padding-left: 2rem;
+    }
+    main article {
+        margin-top: 4rem;
+    }
+}
+
+.summary {
+    border-left: 4px solid rgba(0, 0, 0, 0.2);
+    padding-left: 12px;
+}
+
+
+#metadata {
+    padding-left: 3px;
+    font-size: 12px;
+}
+
+.breadcrumbs ol {
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+}
+
+.breadcrumbs li:not(:last-of-type)::after {
+    /*Add the > icon between breadcrumb items*/
+    content: "\e806";
+    font-family: "legero";
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.toc {
+    list-style: inside upper-roman;
+}
+.toc li > ol {
+    list-style: inside lower-alpha;
+}
+
+.toc li.section {
+    list-style: none;
+}
+.toc li.section > h1 {
+    font-size: 1.25em;
+    margin: .64rem 0 0;
+}
+
+.toc.fixed {
+    /*the table of contents available while scrolling down the page*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    min-height: fit-content;
+    max-height: 90vh;
+    width: 100vw;
+    background-color: #fbfbfb;
+    margin: 0;
+    padding-top: 2em;
+    padding-bottom: 75px;/*70px to get above the #fab*/
+    box-shadow: 0 0 1em 3px rgba(0,0,0,.2);
+    transition: bottom .25s ease-in-out;
+    font-size: 14px;
+    line-height: 2;
+}
+.toc.fixed:not(.toggled) {
+    /*start below the page*/
+    bottom: -100vh;
+}
+
+#fab {
+    /*The floating action button*/
+    position: fixed;
+    left: 15px;
+    bottom: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-align: center;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    border: 0;
+    z-index: 9999;
+    background-color: #fbfbfb;
+}
+#fab:not(.available) {
+    display: none;
+}
+#fab:focus {
+    /*get rid of the highlighting when clicked*/
+    border: 0;
+    outline: 0;
+}
+
+@media (min-width: 780px) {
+    .toc.fixed {
+        /*Make the Table of Content fixed in the left rail on desktop*/
+        padding-inline-start: 1%;
+        top: 0;
+        left: 2rem;
+        bottom: unset;
+        width: 16%;
+        margin-top: 5rem;
+        opacity: .3;
+        box-shadow: unset;
+        background-color: unset;
+        transition: opacity .15s ease;
+        transition: left .25s ease-in-out;
+    }
+    .toc.fixed:hover {
+        opacity: 1;
+    }
+    .toc.fixed:not(.available), .toc.fixed.toggled {
+        left: -100vw;
+    }
+
+    .toc.fixed li > ol {
+        padding-inline-start: 10px;
+    }
+
+    #fab {
+        left: 45px;
+        box-shadow: unset;
+        background-color: unset;
+        transform: rotate(270deg);
+    }
+}
+
+/***
+                  _
+                 (_)      _
+  ___  ____  ____ _ ____ | |_ _   _  ____ ____
+ /___)/ ___)/ ___) |  _ \|  _) | | |/ ___) _  )
+|___ ( (___| |   | | | | | |_| |_| | |  ( (/ /
+(___/ \____)_|   |_| ||_/ \___)____|_|   \____)
+                   |_|
+scripture ***/
+
+
+.scripture::before {
+    font-family: "legero";
+    content: '\e802  expand all';
+    font-size: .825rem;
+    color: rgba(0,0,0,.2);
+    display: block;
+    float: right;
+}
+
+.scripture.expanded::before {
+	content: "\e800  collapse all";
+}
+
+.scripture dd:not(.visible) {
+    display: none;
+}
+
+.scripture dd p:last-of-type {
+    /*make the "(ESV)" copyright text inline*/
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.scripture dt::before {
+    font-family: "legero";
+    content: "\e806";
+    margin-right: 1em;
+    margin-left: .5em;
+}
+
+.scripture dt.expanded::before {
+    content: "\e804";
+}
+
+.scripture dt.expanded {
+	font-weight: bold;
+}
+
+.scripture dt {
+    line-height: 1.8;
+}
+
+.scripture dt:not(:first-of-type) {
+    border-top: 1px solid rgba(0, 0, 0, .2);
+}
+
+/***
+            _     _
+           (_)   | |
+  ____  ___ _  _ | | ____  ___
+ / _  |/___) |/ || |/ _  )/___)
+( ( | |___ | ( (_| ( (/ /|___ |
+ \_||_(___/|_|\____|\____|___/
+asides ***/
+main article aside {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    /* font-size: .8em; */
+    padding-top: 1.6em;
+}
+
+@media (min-width: 1200px) {
+    main article aside {
+        /*Display asides within the article to the left of the rest of nearby content*/
+        float: right;
+        width: 33%;
+        border-top: none;
+        border-bottom: none;
+        border-left: 1px solid black;
+        padding-left: 2.75em;
+        margin-left: 2.75em;
+    }
+}
+
+/***
+            _
+           | |
+  ____ ___ | | ___   ____ ___
+ / ___) _ \| |/ _ \ / ___)___)
+( (__| |_| | | |_| | |  |___ |
+ \____)___/|_|\___/|_|  (___/
+colors ***/
+body {
+    background-color: whitesmoke;
+}
+
+a {
+    color: #304799;
+    text-decoration: none;
+}
+
+/***
+  ___
+ / __)           _
+| |__ ___  ____ | |_   ___
+|  __) _ \|  _ \|  _) /___)
+| | | |_| | | | | |__|___ |
+|_|  \___/|_| |_|\___|___/
+fonts ***/
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Spectral', serif;
+    line-height: 1.45;
+    color: #333;
+}
+
+p {
+    margin-bottom: 1.25em;
+}
+
+section, aside {
+	display: flow-root; /*let each section be a unique flow root*/
+    margin: 2.75rem 0 0;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0 0 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+h1 {
+    font-size: 3.052em;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2.441em;
+}
+
+h3 {
+    /*font-size: 1.953em;*/
+    font-size: 1.563em;
+}
+
+/*h4 {
+    font-size: 1.563em;
+}*/
+
+h4, h5 {
+    font-size: 1.25em;
+}
+
+small, .text_small {
+    font-size: 0.75em;
+}
+
