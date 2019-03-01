@@ -1,0 +1,20 @@
+{#
+Scripture
+=========
+
+Use this shortcode to get a list of scripture references in a "defintion list"
+
+This is meant to be used with legero.js, which will dynamically populate
+the actual text of the references.
+
+
+Usage
+-----
+
+{{ scripture(list=["1 John 3:16", "1 Timothy 3:16"]) }}
+#}
+<dl class="scripture">
+    {% for reference in list %}
+        <dt>{{ reference }}</dt>
+    {% endfor %}
+</dl>
