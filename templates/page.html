@@ -14,17 +14,23 @@
         <main>
             <article itemscope itemtype="https://schema.org/Article">
 
-                <h1 itemprop="headline name">{{ page.title }}</h1>
+                {% if page.extra.headline %}
+                <h1 itemprop="headline name">{{ page.extra.headline }}</h1>
+                {% endif %}
 
                 <div id="metadata">
                     By <a href="/about" itemprop="author publisher">{{ page.extra.author | default(value="Jordan Shurmer")}}</a>.
-                    Published <meta itemprop="datePublished" content="{{ page.date }}">{{ page.date }}
+                    {% if page.date %}
+                    Published <meta itemprop="datePublished" content="{{ page.date }}">{{ page.date | date(format="%b %d, %Y") }}
+                    {% endif %}
 
                     <nav class="breadcrumbs">
                         <ol>
                             {% for path in page.ancestors %}
                                 {% set section = get_section(path=path) %}
+                                {% filter lower %}
                                 <li><a href="{{ section.permalink }}">{{ section.title }}</a></li>
+                                {% endfilter %}
                             {% endfor %}
                         </ol>
                     </nav>
