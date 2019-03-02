@@ -7,14 +7,14 @@ date = 2019-02-20
 headline = "The Atonement"
 +++
 
-# Introduction
+## Introduction
 
 The subject of the atonement is all about what happened on the cross. What did Jesus's death accomplish? 
 
 This is a glorious subject, which we can only know in part.
 * Paul prays in Ephesians for the church to <q>know the love of Christ that surpasses knowledge</q>
 * God's love is defined in terms of the atonement
-    * 1 John: this is love, not that we have loved GOd but that he loves us and sent his SOn to be the propitiation for our sins
+    * 1 John: this is love, not that we have loved God but that he loves us and sent his Son to be the propitiation for our sins
     * Romans 5:8: God shows his love for us in that while we were yet sinners Christ died for us
     * John 3:16: God so loved the world, that he gave his only Son, that whoever believes in him should not perish by have eternal life
 * Ephesians 2 says that God saved us **so that** in the coming ages he might show us the immeasurable riches of his grace in kindness towards us in Christ Jesus
@@ -25,7 +25,7 @@ So, what happened on the Cross? This is the love of God revealed. This is a subj
 
 There are various ways of describing what God accomplished on the Cross. Apart from this work we are in **bondage** to sin, **separated** from God, and deserving his **wrath**. The atonement provides the solution as **redemption**, **reconciliation**, and **propitiation**.
 
-# Propitiation
+## Propitiation
 
 Jesus was a sacrifice of propitiation. This means his sacrifice removes the wrath of God from us and brings the favor of God to us. The gospel is that God is now _propitious_ (favorable) towards us through the sacrifice of Jesus in the place of his people. He bore the wrath that I deserve and I am credited with his favor in God's sight.
 
@@ -35,7 +35,7 @@ Jesus was a sacrifice of propitiation. This means his sacrifice removes the wrat
   "1 John 4:7-11"
   ]) }}
 
-## Wrath Removal
+### Wrath Removal
 
 The wrath of God that I deserve was poured out on the Song of God instead. And the righteousness of Christ is credited to me.
 
@@ -49,7 +49,7 @@ The cup of God's wrath (Jeremiah 25:15, Isaiah 51:17, Revelation 14:10) was pour
   "Hebrews 9:24-28"
   ]) }}
 
-## Righteousness Granted
+### Righteousness Granted
 
 Not only is God's wrath removed, but Jesus's righteousness is now mine!
 
@@ -60,7 +60,7 @@ Not only is God's wrath removed, but Jesus's righteousness is now mine!
   "Philippians 3:9",
   ]) }}
 
-# Reconciliation
+## Reconciliation
 
 I was once separated from God due to my Sin and his Holiness. Only through the work of Christ's sacrifice on the cross am I reconciled to God.
 
@@ -70,7 +70,7 @@ I was once separated from God due to my Sin and his Holiness. Only through the w
       "Ephesians 2:13-16",
   ]) }}
 
-# Redemption
+## Redemption
 
 I was in bondage to my sin and to Satan, and needed someone to provide redemption in order to redeem me from that bondage.
 

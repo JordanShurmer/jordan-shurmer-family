@@ -53,7 +53,7 @@ main {
 }
 
 .toc {
-    list-style: inside upper-roman;
+    list-style: inside decimal;
 }
 .toc li > ol {
     list-style: inside lower-alpha;
@@ -116,6 +116,7 @@ main {
 @media (min-width: 780px) {
     .toc.fixed {
         /*Make the Table of Content fixed in the left rail on desktop*/
+        font-size: 11px;
         padding-inline-start: 1%;
         top: 0;
         left: 2rem;
@@ -136,7 +137,7 @@ main {
     }
 
     .toc.fixed li > ol {
-        padding-inline-start: 10px;
+        //padding-inline-start: 10px;
     }
 
     #fab {
