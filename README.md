@@ -20,7 +20,8 @@ Building
 Built as a static site, using [Zola](https://www.getzola.org).
 
 ```
-zola build # builds the site into ./public
+# set the base_url to //jordan.shurmer.family (protocol agnostic)
+zola build -u //jordan.shurmer.family
 ```
 
 
