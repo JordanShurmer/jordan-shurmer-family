@@ -14,8 +14,10 @@ main {
     margin: auto;
 }
 
+
 @media (min-width: 780px) {
     main {
+        max-width: 566px;
         width: 60%;
         padding-left: 2rem;
     }

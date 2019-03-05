@@ -11,14 +11,16 @@ headline = "Baptism"
 
 ## Baptism is Symbolic
 
-I believe baptism is a physical **symbol** of what happens at conversion (united to christ in burial and resurrection)
+{% summary() %}
+I believe baptism is a physical **symbol** of what happens at conversion
+{% end %}
 
-The English word _baptism_ is a transliteration of the greek word being used, rather than a translation. The word means simply _immersion_. So, what the original hearers and readers of all of the things said about baptism heard was to be _immersed in Christ_, _immersed in the name of Jesus Christ_, etc.
+The English word _baptism_ is a transliteration of the greek word being used, rather than a translation. The word means simply _immersion_. So, what the original hearers and readers of all of the things said about baptism heard was to be _immersed in Christ_, _immersed in the name of Jesus Christ_, etc. I believe they would have easily understood the apostles to mean that baptism is a symbol for what actually happens in conversion, not that baptism is the means to bring about conversion. In conversion we are united to and immersed in Christ and his burial and resurrection and our sins are washed from us - those things are symbolized by being immersed in water in the name of Jesus.
 
 Reading _baptism_ as _immersion_ helps to see the clearly symbolic usage, since _immerse_ is used symbolically in general. For example, we speak of being immersed in our work, immersed in music, etc. The new testament uses the word similarly: immersed with/in the Holy Spirit (Matthew 3:11, Mark 1:8, Luke 3:16, John 1:33, Acts 1:5), immersed in suffering (Mark 10:38, Luke 12:50), immersed into death (Romans 6:3), immersed into Moses (1 Corinthians 10:2), immersed into the church (1 Corinthians 12:13).
 
 
-So, when reading things like 1 Peter 4:21 _baptism now saves you_, this can easily be understood symbolically. In the same way we might say _this wedding ring unites us_, or _I pledge allegiance to the flag_. Symbols are meant to be used in place of the thing they symbolize, so it does makes sense to say _baptism saves you_ when baptism is symbolic of our union with Christ (which is actually accomplished through faith, not baptism literally)
+So, when reading things like 1 Peter 4:21 _baptism now saves you_, and Acts 2:38 _Repent and be baptized for the forgiveness of your sins_, this can easily be understood symbolically. The act of baptism doesn't literally save you - it doesn't bring about salvation - it's a symbol of what saves you (buried and raised with Christ through faith). In the same way we might say _this wedding ring unites us_, or _I pledge allegiance to the flag_,  even though those symbols aren't the reality that they symbolize. Symbols are meant to be used in place of the thing they symbolize. It does makes sense to say _baptism saves you_ when baptism is symbolic of our union with Christ (which is actually accomplished through faith, not immersion in water).
 
 </section>
 

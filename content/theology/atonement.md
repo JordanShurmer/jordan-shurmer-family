@@ -81,3 +81,31 @@ I was in bondage to my sin and to Satan, and needed someone to provide redemptio
   "Hebrews 2:14-15",
   "Colossians 1:13-14",
   ]) }}
+ 
+## Resources
+
+These are some of the resources I have found helpful on the topic of the atonement
+
+### Online
+
+* J.I. Packer, Mark Dever: [In My Place Condemned He Stood](https://www.wtsbooks.com/products/in-my-place-condemned-he-stood-j-i-mark-dever-packer-9781433502002?variant=9747692847151)
+* C.H. Spurgeon: [Christ's Finished Work](https://www.spurgeon.org/resource-library/sermons/christs-finished-work)
+* C.H. Spurgeon: [Christ Crucified](http://www.spurgeongems.org/vols46-48/chs2673.pdf)
+* Paul Washer (audio): [Penal Substitutionary Atonement, The Pinnacle of God's Saving Plan](https://www.sermonaudio.com/sermoninfo.asp?SID=12019115526004)
+* [Monergism's Atonement Index](https://www.monergism.com/topics/atonement)
+* DesiringGod.org - [The Death of Christ](https://www.desiringgod.org/topics/the-death-of-christ/messages?sort=oldest)
+
+### Books
+
+* R.C. Sproul: [The Truth of the Cross](https://www.wtsbooks.com/products/the-truth-of-the-cross-r-c-sproul-9781567690873)
+* D.A. Carson: [Scandalous: The Cross and the Resurrection of Jesus](https://www.wtsbooks.com/products/scandalous-d-a-carson-9781433511257?variant=9747855540271)
+* John Owen: [The Death of Death in the Death of Christ](https://www.wtsbooks.com/products/death-death-death-christ-john-owen-9781781919064?variant=9796377575471) ([ebook/pdf](https://www.monergism.com/death-death-death-christ-ebook)) ([web](http://www.monergism.com/thethreshold/sdg/owen_death_index.htm))
+
+### Music
+
+* Shai Linne: [The Atonement](https://open.spotify.com/album/5f1Wt873Rlq3UkK5eP0zp7?si=WsU6VcLBQ2OTz91SemWRnA)
+* SGM: [Grace and Peace](https://sovereigngracemusic.org/music/songs/grace-and-peace/)
+* SGM: [Hallelujaj, What a Savior](https://sovereigngracemusic.org/music/songs/hallelujah-what-a-savior/)
+* SGM: [O My Soul, Arise](https://sovereigngracemusic.org/music/songs/o-my-soul-arise/)
+* William Cowper: [There is a Fountain Filled with Blood](https://sovereigngracemusic.org/music/songs/there-is-a-fountain-filled-with-blood/)
+* SGM: [What a Savior](https://sovereigngracemusic.org/music/songs/what-a-savior/)

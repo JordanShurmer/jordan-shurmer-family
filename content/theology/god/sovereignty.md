@@ -370,7 +370,13 @@ More on this topic in my notes on election, but suffice it to say that God is th
 
 ## Resources 
 
+### Online:
+
 * John Piper: [Are there two wills in God](https://www.desiringgod.org/articles/are-there-two-wills-in-god)
+
+### Music:
+
+* William Cowper: [God Moves in a Mysterious Way](https://en.wikipedia.org/wiki/God_Moves_in_a_Mysterious_Way)
 
 </section>
 
