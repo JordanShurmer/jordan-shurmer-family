@@ -28,10 +28,7 @@ zola build -u //jordan.shurmer.family
 Hosting
 -------
 
-Currently hosted using [surge.sh](https://surge.sh).
+Currently hosted using [netlify](https://www.netlify.com). It should auto-publish when you push a change to `master`.
 
-```
-surge ./public jordan.shurmer.family
-```
 
 
