@@ -18,9 +18,11 @@
 
 <ul>
     {% for page in section.pages %}
+        {% if not page.draft %}
         <li>
             <a href="{{ page.permalink }}">{{ page.title }}</a>
         </li>
+        {% endif %}
     {% endfor %}
 </ul>
 
