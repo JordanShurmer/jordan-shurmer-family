@@ -2,6 +2,8 @@
 title = "Regeneration"
 description = "A look into my views on regeneration."
 date = 2019-02-23
+template = "legero.html"
+
 +++
 
 ## Introduction

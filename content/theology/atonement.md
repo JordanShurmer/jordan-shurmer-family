@@ -2,6 +2,7 @@
 title = "Atonement"
 description = "A look into the Atonement: the most glorious of the christian doctrines, the crux of christianity"
 date = 2019-02-20
+template = "legero.html"
 
 [extra]
 headline = "The Atonement"

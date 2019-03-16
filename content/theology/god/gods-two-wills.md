@@ -2,6 +2,7 @@
 title = "God's Two Wills"
 description = 'A look into my view of the so-called "two wills" of God'
 draft = true
+template = "legero.html"
 +++
 
 ## Introduction

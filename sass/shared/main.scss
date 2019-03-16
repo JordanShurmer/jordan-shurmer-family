@@ -1,0 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+main {
+  width: 95%;
+  margin: auto;
+}
+
+
+@media (min-width: 780px) {
+  main {
+    max-width: 1020px;
+    width: 60%;
+    padding-left: 2rem;
+  }
+  main article {
+    margin-top: 4rem;
+  }
+}

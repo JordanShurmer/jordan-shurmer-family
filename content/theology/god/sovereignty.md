@@ -2,6 +2,7 @@
 title = "Sovereignty"
 description = "A look into my view of God's sovereignty"
 date = 2019-02-20
+template = "legero.html"
 
 [extra]
 headline = "God's Sovereignty"

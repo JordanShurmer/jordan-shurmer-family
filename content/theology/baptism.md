@@ -2,6 +2,7 @@
 title = "Baptism"
 description = "A look into my views on baptism."
 date = 2019-01-30
+template = "legero.html"
 
 [extra]
 headline = "Baptism"
