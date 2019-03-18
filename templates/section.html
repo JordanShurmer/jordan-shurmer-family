@@ -1,30 +1,37 @@
-<!DOCTYPE html>
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8"/>
-    <title>{{ section.title }} | Jordan Shurmer</title>
+{% extends "base.html" %}
+{% block title %}{{ section.title }}{% endblock title %}
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
-<body>
-{% if section.extra.headline %}
-    <h1>{{ section.extra.headline }}</h1>
-{% else %}
-    <h1>{{ section.title }}</h1>
-{% endif %}
+{% block main %}
+    {% if section.extra.headline %}
+        <h1>{{ section.extra.headline }}</h1>
+    {% else %}
+        <h1>{{ section.title }}</h1>
+    {% endif %}
 
-{{ section.description }}
+    {{ section.description }}
 
-<ul>
-    {% for page in section.pages %}
-        {% if not page.draft %}
-        <li>
-            <a href="{{ page.permalink }}">{{ page.title }}</a>
-        </li>
-        {% endif %}
-    {% endfor %}
-</ul>
-
-</body>
-</html>
+    <ul>
+        {% for page in section.pages %}
+            {% if not page.draft %}
+                <li>
+                    <a href="{{ page.permalink }}">{{ page.title }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+        {% for sub in section.subsections %}
+            {% set subsection =  get_section(path=sub) %}
+            <li>
+                <a href="{{ subsection.permalink }}">{{ subsection.title }}</a>
+                <ul>
+                    {% for page in subsection.pages %}
+                        {% if not page.draft %}
+                            <li>
+                                <a href="{{ page.permalink }}">{{ page.title }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock main %}

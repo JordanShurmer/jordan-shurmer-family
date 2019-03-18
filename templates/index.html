@@ -1,59 +1,21 @@
-<!DOCTYPE html>
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8"/>
-    <title>Jordan Shurmer</title>
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+{% block main %}
+    <section>
 
-</head>
-<body>
-<h1>Jordan's Website</h1>
+        <h1>Jordan's Website</h1>
 
-Welcome to Jordan's website! There's not much to see here...
+        <p>
+            Welcome to Jordan's website! There's not much to see here...
+        </p>
 
-{% set section = get_section(path="dev/_index.md") %}
-<h2>{{ section.title }}</h2>
+        <p>
+            Click around in the navigation above to explore
+        </p>
 
-{{ section.description }}
 
-<ul>
-    {% for page in section.pages %}
-        <li>
-            <a href="{{ page.permalink }}">{{ page.title }}</a>
-        </li>
-    {% endfor %}
-</ul>
+    </section>
 
-{% set section = get_section(path="theology/_index.md") %}
-<h2>{{ section.title }}</h2>
+{% endblock main %}
 
-{{ section.description }}
-
-<ul>
-    {% for page in section.pages %}
-        {% if not page.draft %}
-            <li>
-                <a href="{{ page.permalink }}">{{ page.title }}</a>
-            </li>
-        {% endif %}
-    {% endfor %}
-    {% for path in section.subsections %}
-        {% set sub = get_section(path=path) %}
-        <li>
-            <a href="{{ sub.permalink }}">{{ sub.title }}</a>
-            <ul>
-                {% for subpage in sub.pages %}
-                    {% if not subpage.draft %}
-                        <li>
-                            <a href="{{ subpage.permalink }}">{{ subpage.title }}</a>
-                        </li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        </li>
-    {% endfor %}
-</ul>
-</body>
-</html>

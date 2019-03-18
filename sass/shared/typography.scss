@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Spectral:500|Stoke');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Spectral|Stoke');
 /***
   ___
  / __)           _
@@ -6,6 +6,7 @@
 |  __) _ \|  _ \|  _) /___)
 | | | |_| | | | | |__|___ |
 |_|  \___/|_| |_|\___|___/
+https://type-scale.com/?size=16&scale=1.250&text=A%20Visual%20Type%20Scale&font=Roboto%20Condensed&fontweight=500&bodyfont=Spectral&bodyfontweight=400&lineheight=1.45&backgroundcolor=white&fontcolor=%23333&preview=false
 fonts ***/
 html {
   font-size: 16px;
@@ -24,13 +25,12 @@ p {
 h1, h2, h3, h4, h5 {
   margin: 0 0 1rem;
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 700;
   line-height: 1.15;
 }
 
 h1 {
   font-size: 3.052em;
-  margin-bottom: 0;
+  //margin-bottom: 0;
 }
 
 h2 {

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <!--Let browser know website is optimized for mobile-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{% block title %}{% endblock title %} | Jordan Shurmer</title>
+
+    {% block headlast %}
+        <link rel="stylesheet" href="{{ get_url(path='base.css') }}">
+    {% endblock headlast %}
+
+</head>
+
+<body>
+
+<section id="header">
+    {% block header %}
+        <div id="hero">
+            {% block hero %}{% endblock hero %}
+            <h1>JS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/theology">Theology</a>
+                </li>
+                <li>
+                    <a href="/dev">Software</a>
+                </li>
+                <li>
+                    <a href="/me">About</a>
+                </li>
+            </ul>
+        </nav>
+    {% endblock header %}
+</section>
+
+<main id="main">
+    {% block main %}
+    {% endblock main %}
+</main>
+
+<section id="footer">
+    {% block footer %}
+    {% endblock footer %}
+</section>
+
+</body>
+</html>

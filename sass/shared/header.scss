@@ -1,0 +1,33 @@
+#header {
+  width: 100vw;
+  height: 44.444vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  #hero {
+    height: 44%;
+    h1 {
+      font-family: stoke, sans-serif;
+      font-size: 4.768em;
+    }
+  }
+
+  nav {
+    margin-top: 5vh;
+    width: 100%;
+    max-width: 1020px;
+
+    ul {
+      list-style-type: none;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+
+    }
+  }
+}

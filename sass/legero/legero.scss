@@ -1,6 +1,4 @@
 @import 'font/css/legero';
-@import '../shared/typography.scss';
-@import "../shared/main.scss";
 @import "toc.scss";
 
 .summary {
@@ -123,7 +121,7 @@ main article aside {
   }
 }
 
-section, aside {
+main section, aside {
   display: flow-root; /*let each section be a unique flow root*/
   margin: 2.75rem 0 0;
 }
