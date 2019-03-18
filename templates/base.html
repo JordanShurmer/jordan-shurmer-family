@@ -18,8 +18,12 @@
 <section id="header">
     {% block header %}
         <div id="hero">
-            {% block hero %}{% endblock hero %}
-            <h1>JS</h1>
+            <a href="/">
+                {% block hero %}
+                    <img src="{{ resize_image(path="default-hero.jpg", width=1020, op='fit_width') }}" alt=""/>
+                {% endblock hero %}
+                <h1>JS</h1>
+            </a>
         </div>
         <nav>
             <ul>

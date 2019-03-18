@@ -1,6 +1,9 @@
 +++
 title = "This Website"
 description = "A look into the software powering this website"
+
+[extra]
+image="./hero.jpg"
 +++
 
 ## The Tech

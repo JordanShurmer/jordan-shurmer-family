@@ -2,11 +2,12 @@
 {% block title %}{{ page.title }}{% endblock title %}
 
 {% block main %}
-<h1 itemprop="headline name">{{ page.title }}</h1>
+    <h1 itemprop="headline name">{{ page.title }}</h1>
 
-<p itemprop="description">
-    {{ page.description }}
-</p>
+
+    <p itemprop="description">
+        {{ page.description }}
+    </p>
 
     {{ page.content | safe }}
 
