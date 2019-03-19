@@ -149,3 +149,5 @@ centered text "JS" and a few links for site navigation
 }
 ```
 {% end %}
+
+{{ disqus() }}

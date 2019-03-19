@@ -1,5 +1,5 @@
-{% extends "base.html" %}
-{% block title %}{{ page.title }}{% endblock title %}
+{% extends "page.html" %}
+{% import "macros/disqus.html" as disqus %}
 
 {% block headlast %}
     {{ super() }}
@@ -62,5 +62,7 @@
     </article>
 
     <script src="{{ get_url(path='legero.js') }}"></script>
+
+    {{ disqus::comments(page=page.permalink) }}
 {% endblock main %}
 
