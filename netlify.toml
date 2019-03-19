@@ -1,6 +1,6 @@
 [build]
     publish = "public/"
-    command = "curl -sL https://github.com/getzola/zola/releases/download/v0.5.1/zola-v0.5.1-x86_64-unknown-linux-gnu.tar.gz | tar zxv && ./zola build -u '//jordan.shurmer.family'"
+    command = "curl -sL https://github.com/getzola/zola/releases/download/v0.5.1/zola-v0.5.1-x86_64-unknown-linux-gnu.tar.gz | tar zxv && ./zola build -u 'https://jordan.shurmer.family'"
 
 [build.environment]
     ZOLA_VERSION = "0.5.1"
