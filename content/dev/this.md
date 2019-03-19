@@ -1,9 +1,6 @@
 +++
 title = "This Website"
 description = "A look into the software powering this website"
-
-[extra]
-image="./hero.jpg"
 +++
 
 ## Overview
@@ -23,8 +20,8 @@ The "header" of this site is worth exploring a bit..
 
 The Markup for the header (also, just view-source to see the same thing)
 
-<meta name="lang" content="html">
 
+{% ace() %}
 ```html
 <section id="header">
 
@@ -46,11 +43,11 @@ The Markup for the header (also, just view-source to see the same thing)
     </nav>
 </section>
 ```
+{% end %}
 
 And the styles, with explanatory comments:
 
-<meta name="lang" content="scss">
-
+{% ace() %}
 ```scss
 /*
 The styles for the site "header"
@@ -151,3 +148,4 @@ centered text "JS" and a few links for site navigation
   }
 }
 ```
+{% end %}

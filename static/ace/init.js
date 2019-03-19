@@ -1,17 +1,16 @@
 document.querySelectorAll('pre>code')
     .forEach(function (codeElement) {
-        codeElement = codeElement.parentElement;
-        //the language is configured on a <meta> tag just before the <pre> block (which is, unfortunately, wrapped in a p tag by the markdown)
-        const conf = codeElement.previousElementSibling.querySelector('meta');
-        let mode = "";
-        if (conf && conf.name === 'lang') {
-            mode = `ace/mode/${conf.content}`;
-        }
+        console.group();
+        console.debug("initializing ace for", codeElement);
+        const classMatch = /language-(\w+)/.exec(codeElement.className);
+        const mode = classMatch && `ace/mode/${classMatch[1]}` || undefined;
+        console.debug({classMatch, "className": codeElement.className, mode});
 
-        const editor = ace.edit(codeElement, {
+        const editor = ace.edit(codeElement.parentElement, {
             readOnly: true,
             maxLines: 30, //make sure the editor has a height
             theme: "ace/theme/monokai",
             mode: mode,
         });
+        console.groupEnd();
     });
