@@ -79,6 +79,8 @@ centered text "JS" and a few links for site navigation
       /*no link styles in the nav*/
       text-decoration: none;
       color: unset;
+      
+      display: inline-block; /*take up the whole li area, not just the text*/
     }
 
     ul {
