@@ -1,0 +1,59 @@
+{% extends "page.njk" %}
+{#{% import "macros/disqus.html" as disqus %}#}
+
+{% block headlast %}
+    {{ super() }}
+    <link rel="stylesheet" href="/legero/legero.css">
+{% endblock headlast %}
+
+{% block main %}
+    <article itemscope itemtype="https://schema.org/Article">
+
+        {% if headline %}
+            <h1 itemprop="headline name">{{ headline }}</h1>
+        {% else %}
+            <h1 itemprop="headline name">{{ title }}</h1>
+        {% endif %}
+
+        <div id="metadata">
+            By <a href="/me" itemprop="author publisher">{{ author | default(author, "Jordan Shurmer") }}</a>.
+            {% if page.date %}
+                Published
+                <meta itemprop="datePublished" content="{{ page.date }}">{{ page.date }}
+            {% endif %}
+
+        </div>
+
+        <p itemprop="description">
+            {{ description }}
+        </p>
+
+        {#        <ol id="toc" class="toc">#}
+        {#            {% for h1 in page.toc %}#}
+        {#                <li>#}
+        {#                    <a href="{{ h1.permalink }}">{{ h1.title }}</a>#}
+        {#                    {% if h1.children %}#}
+        {#                        <ol>#}
+        {#                            {% for h2 in h1.children %}#}
+        {#                                <li><a href="#{{ h2.id }}">{{ h2.title }}</a></li>#}
+        {#                            {% endfor %}#}
+        {#                        </ol>#}
+        {#                    {% endif %}#}
+        {#                </li>#}
+        {#            {% endfor %}#}
+        {#        </ol>#}
+
+    {{ content | toc | safe }}
+
+        <section itemprop="articleBody">
+            {{ content | safe }}
+        </section>
+    </article>
+
+{% endblock main %}
+
+{% block footlib %}
+    {{ super() }}
+    <script src="/legero.js"></script>
+{% endblock %}
+

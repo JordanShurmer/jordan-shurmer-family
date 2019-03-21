@@ -1,0 +1,150 @@
+# This Website
+
+A look into the software powering this website
+
+## Overview
+
+This website is build as a static website, using some awesome technology:
+
+* Markdown
+* HTML
+* CSS
+* Javascript
+* Zola
+* Netlify
+
+## The Header
+
+The "header" of this site is worth exploring a bit..
+
+The Markup for the header (also, just view-source to see the same thing)
+
+
+```html
+<section id="header">
+
+    <!-- A div for the "hero" section.. the large visual at the top -->
+    <div id="hero">
+        <a href="/">
+            <img src="..."/>
+            <h1>JS</h1>
+        </a>
+    </div>
+        
+    <!-- A nav for the site navigation -->
+    <nav>
+        <ul>
+            <li><a href="/theology">Theology</a></li>
+            <li><a href="/dev">Software</a></li>
+            <li><a href="/me">About</a></li>
+        </ul>
+    </nav>
+</section>
+```
+
+And the styles, with explanatory comments:
+
+```scss
+/*
+The styles for the site "header"
+
+The header currently contains a "hero" image, with
+centered text "JS" and a few links for site navigation
+ */
+#header {
+  width: 100vw; /*Full width (100 view-width units)*/
+  max-width: 1020px; /*but not too big*/
+  margin: 0 auto 2em; /*left-right centered, space at the bottom*/
+  height: 66vh; /*more than half the view-height*/
+
+
+  /*
+  The Layout of the header
+  ---------------------------
+  */
+  display: flex;
+  flex-flow: column nowrap; /*A column of things*/
+  align-items: center; /*centered on the page*/
+  justify-content: flex-start; /*starting at the top*/
+
+
+  box-shadow: 0 0 2px rgba(0, 0, 0, .2);/*A slight box-shadow
+  to differentiate the header from the body*/
+
+
+  #hero {
+    width: 100%; /*Full Width*/
+    max-width: 1020px; /*but not too big*/
+    height: 60vh; /*60 view-height units. most of the #header*/
+
+    position: relative; /*explicit, for the sake of the img's absolute position*/
+
+    a {
+      /*no link styling here*/
+      color: unset;
+      text-decoration: none;
+    }
+
+    img {
+      /* HERO IMAGE */
+      width: 100%; /*full width*/
+      height: 100%; /*full height*/
+      object-fit: cover; /*better "cropping" for different ratios*/
+      position: absolute; /*take it out of the flow, so we can center the text more easily*/
+
+      z-index: -1; /*and layer it behind the text*/
+    }
+
+    h1 {
+      /* HERO TEXT */
+      font-family: stoke, sans-serif; /*Fancy Font Family*/
+      font-size: 9.313em; /*Giant size*/
+
+
+      line-height: 60vh; /* center it vertically, same line-height as container height*/
+      text-align: center; /* center ir horizontally */
+
+      mix-blend-mode: color-burn; /*Cool effect with the font and the image:
+      All of the various mix-blend-modes have different effects,
+      after some experimenting this one seems to best for this site*/
+
+      /*clear spacing things*/
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  nav {
+    flex-grow: 1; /*take up any remaining space in the #header*/
+    width: 100%; /*full width*/
+    max-width: 1020px; /*but not too big*/
+
+    line-height: 6vh; /*should be the remaining space.. to center the nav items vertically*/
+
+    font-family: 'Roboto Condensed', sans-serif; /*using site heading font*/
+    
+    a {
+      /*no link styles in the nav*/
+      text-decoration: none;
+      color: unset;
+      
+      display: inline-block; /*take up the whole li area, not just the text*/
+    }
+
+    ul {
+      list-style-type: none; /*no bullets*/
+
+      /*clear the spacings*/
+      padding: 0;
+      margin: 0;
+
+      /*Nav Item Layout:*/
+      display: flex;
+      flex-flow: row wrap; /*A row of items*/
+      justify-content: space-evenly; /*evenly spaced*/
+
+    }
+  }
+}
+```
+

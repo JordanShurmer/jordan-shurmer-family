@@ -1,0 +1,27 @@
+{
+  "name": "jordan-shurmer-family",
+  "version": "1.0.0",
+  "description": "Jordan Shurmer's Notes",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx sass ./sass:./_site && eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JordanShurmer/jordan-shurmer-family.git"
+  },
+  "author": "Jordan Shurmer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JordanShurmer/jordan-shurmer-family/issues"
+  },
+  "homepage": "https://github.com/JordanShurmer/jordan-shurmer-family#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.7.1",
+    "eleventy-plugin-toc": "^1.0.1",
+    "markdown-it-anchor": "^5.0.2",
+    "sass": "^1.17.3"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,7 @@
+{% macro list(list=[]) %}
+<dl class="scripture">
+{% for reference in list %}
+<dt>{{ reference }}</dt>
+{% endfor %}
+</dl>
+{% endmacro %}

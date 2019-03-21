@@ -10,20 +10,19 @@ A website for Jordan's notes and thoughts and things.
 Development
 -----------
 
-This is a Zola project, so you can use Zola to serve the site from `localhost` while working on it.
+This is an [11ty](https://11ty.io) project, so you can use `eleventy` to serve the site from `localhost` while working on it.
 
 ```
-zola serve
+eleventy --serve
 ```
 
 Building
 --------
 
-Built as a static site, using [Zola](https://www.getzola.org).
+Built as a static site, using Eleventy
 
 ```
-# set the base_url to //jordan.shurmer.family (protocol agnostic)
-zola build -u //jordan.shurmer.family
+eleventy
 ```
 
 

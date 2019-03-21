@@ -1,18 +1,22 @@
 .toc {
-  list-style: inside decimal;
 
-  li > ol {
-    list-style: inside lower-alpha;
-  }
+  ol {
+    list-style: inside decimal;
 
-
-  li.section {
-    list-style: none;
-
-    > h1 {
-      font-size: 1.25em;
-      margin: .64rem 0 0;
+    li > ol {
+      list-style: inside lower-alpha;
     }
+
+
+    li.section {
+      list-style: none;
+
+      > h1 {
+        font-size: 1.25em;
+        margin: .64rem 0 0;
+      }
+    }
+
   }
 
   &.fixed {
@@ -90,11 +94,9 @@
   }
 
   @media (min-width: 780px) {
-    #fab {
-      left: 45px;
-      box-shadow: unset;
-      background-color: unset;
-      transform: rotate(270deg);
-    }
+    left: 45px;
+    box-shadow: unset;
+    background-color: unset;
+    transform: rotate(270deg);
   }
 }
