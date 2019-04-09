@@ -5,7 +5,7 @@
 ## Baptism is Symbolic
 
 <p class="summary">
-I believe baptism is a physical **symbol** of what happens at conversion
+I believe baptism is a physical <strong>symbol</strong> of what happens at conversion
 </p>
 
 The English word _baptism_ is a transliteration of the greek word being used, rather than a translation. The word means simply _immersion_. So, what the original hearers and readers of all of the things said about baptism heard was to be _immersed in Christ_, _immersed in the name of Jesus Christ_, etc. I believe they would have easily understood the apostles to mean that baptism is a symbol for what actually happens in conversion, not that baptism is the means to bring about conversion. In conversion we are united to and immersed in Christ and his burial and resurrection and our sins are washed from us - those things are symbolized by being immersed in water in the name of Jesus.
@@ -46,7 +46,7 @@ I will note that this is _justification_ by faith alone, not final salvation by 
 
 Faith is the moment we are justified, not baptism. If baptism is, then faith is not
 
-This is the biggest issue I have with the doctrine that baptism is the time at which one is united to christ. This _seems to_ contradict the teaching, essential to christianity, that justification is through faith alone. Specifically, this would seem to contradict the following verses (emphasis added where I see the contradiction). If baptism is the moment that justification happens, then these verses must be interpreted in a way that doesn't take them at their most plain meaning
+This is the biggest issue I have with the doctrine that baptism is the time at which one is united to christ. This _seems to_ contradict the teaching, essential to christianity, that justification is through faith alone. Specifically, this would seem to contradict the following verses. If baptism is the moment that justification happens, then these verses must be interpreted in a way that doesn't take them at their most plain meaning
 
 {{ scripture.list([
   "Romans 3:25-26",
@@ -67,7 +67,7 @@ This is the biggest issue I have with the doctrine that baptism is the time at w
 
 ### Gospel Apart from Baptism
 
-The gospel is the power of God for salvation (Romans 1:16), and the gospel does not necessarily include baptism. Importantly, it is the gospel is what brings about conversion
+The gospel is the power of God for salvation (Romans 1:16), and the gospel does not necessarily include baptism. Importantly, it is the gospel is hich brings about conversion
 
 {{ scripture.list([
   "1 Corinthians 1:17-25",

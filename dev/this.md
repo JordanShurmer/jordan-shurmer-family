@@ -2,6 +2,8 @@
 
 A look into the software powering this website
 
+[View on Github](https://github.com/JordanShurmer/jordan-shurmer-family)
+
 ## Overview
 
 This website is build as a static website, using some awesome technology:
@@ -10,7 +12,7 @@ This website is build as a static website, using some awesome technology:
 * HTML
 * CSS
 * Javascript
-* Zola
+* <s>Zola</s> Eleventy
 * Netlify
 
 ## The Header

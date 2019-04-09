@@ -28,7 +28,7 @@
             {{ description }}
         </p>
 
-        {{ content | toc | safe }}
+        {{ content | toc('{"tags": ["h2","h3"]}') | safe }}
 
         <section itemprop="articleBody">
             {{ content | safe }}
