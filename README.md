@@ -22,7 +22,8 @@ Building
 Built as a static site, using Eleventy
 
 ```
-eleventy
+npm install
+npm run build # will compile the sass and then build with eleventy
 ```
 
 
