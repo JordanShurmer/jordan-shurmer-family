@@ -19,10 +19,10 @@
   "homepage": "https://github.com/JordanShurmer/jordan-shurmer-family#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.7.1",
-    "eleventy-plugin-nesting-toc": "github:JordanShurmer/eleventy-plugin-toc",
+    "eleventy-plugin-nesting-toc": "^1.0.0",
     "markdown-it-anchor": "^5.0.2",
     "nunjucks-date": "^1.3.0",
-    "sass": "^1.17.3"
+    "sass": "^1.18.0"
   },
   "dependencies": {}
 }
