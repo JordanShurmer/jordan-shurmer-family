@@ -24,7 +24,7 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    min-height: fit-content;
+    height: fit-content;
     max-height: 90vh;
     width: 100vw;
     background-color: #fbfbfb;
@@ -36,10 +36,11 @@
     transition: bottom .25s ease-in-out;
     font-size: 14px;
     line-height: 2;
+    overflow: scroll;
 
     &:not(.toggled) {
       /*start below the page*/
-      bottom: -100vh;
+      bottom: -500vh;
     }
 
     @media (min-width: 780px) {
