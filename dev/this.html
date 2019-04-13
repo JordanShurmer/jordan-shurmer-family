@@ -1,51 +1,66 @@
-# This Website
+<h1>This Website</h1>
 
-A look into the software powering this website
+<p>
+    A look into the software powering this website
+</p>
 
-[View on Github](https://github.com/JordanShurmer/jordan-shurmer-family)
+<p>
+    <a href="https://github.com/JordanShurmer/jordan-shurmer-family">View on Github</a>
+</p>
 
-## Overview
+<h2>Overview</h2>
 
-This website is build as a static website, using some awesome technology:
+<p>
+    This website is build as a static website, using some awesome technology:
+</p>
 
-* Markdown
-* HTML
-* CSS
-* Javascript
-* <s>Zola</s> Eleventy
-* Netlify
+<ul>
+    <li>Markdown</li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+    <li><s>Zola</s> Eleventy</li>
+    <li>Netlify</li>
+</ul>
 
-## The Header
+<h2>The header</h2>
 
-The "header" of this site is worth exploring a bit..
+<p>
+    The "header" of this site is worth exploring a bit..
+</p>
 
-The Markup for the header (also, just view-source to see the same thing)
+<p>
+    The Markup for the header (also, just view-source to see the same thing)
+</p>
 
 
-```html
-<section id="header">
+{% codeblock "html" %}
+    <section id="header">
 
-    <!-- A div for the "hero" section.. the large visual at the top -->
-    <div id="hero">
-        <a href="/">
-            <img src="..."/>
-            <h1>JS</h1>
-        </a>
-    </div>
-        
-    <!-- A nav for the site navigation -->
-    <nav>
-        <ul>
-            <li><a href="/theology">Theology</a></li>
-            <li><a href="/dev">Software</a></li>
-            <li><a href="/me">About</a></li>
-        </ul>
-    </nav>
-</section>
-```
+        <!-- A div for the "hero" section.. the large visual at the top -->
+        <div id="hero">
+            <a href="/">
+                <img src="..."/>
+                <h1>JS</h1>
+            </a>
+        </div>
 
-And the styles, with explanatory comments:
+        <!-- A nav for the site navigation -->
+        <nav>
+            <ul>
+                <li><a href="/theology">Theology</a></li>
+                <li><a href="/dev">Software</a></li>
+                <li><a href="/me">About</a></li>
+            </ul>
+        </nav>
+    </section>
+{% endcodeblock %}
 
+<p>
+    And the styles, with explanatory comments:
+</p>
+
+{% codeblock "scss" %}
 ```scss
 /*
 The styles for the site "header"
@@ -53,12 +68,11 @@ The styles for the site "header"
 The header currently contains a "hero" image, with
 centered text "JS" and a few links for site navigation
  */
-#header {
+#site-header {
   width: 100vw; /*Full width (100 view-width units)*/
   max-width: 1020px; /*but not too big*/
   margin: 0 auto 2em; /*left-right centered, space at the bottom*/
   height: 66vh; /*more than half the view-height*/
-
 
   /*
   The Layout of the header
@@ -77,7 +91,7 @@ centered text "JS" and a few links for site navigation
   #hero {
     width: 100%; /*Full Width*/
     max-width: 1020px; /*but not too big*/
-    height: 60vh; /*60 view-height units. most of the #header*/
+    height: 60vh; /*60 view-height units. most of the #site-header*/
 
     position: relative; /*explicit, for the sake of the img's absolute position*/
 
@@ -117,19 +131,19 @@ centered text "JS" and a few links for site navigation
   }
 
   nav {
-    flex-grow: 1; /*take up any remaining space in the #header*/
+    flex-grow: 1; /*take up any remaining space in the #site-header*/
     width: 100%; /*full width*/
     max-width: 1020px; /*but not too big*/
 
     line-height: 6vh; /*should be the remaining space.. to center the nav items vertically*/
 
     font-family: 'Roboto Condensed', sans-serif; /*using site heading font*/
-    
+
     a {
       /*no link styles in the nav*/
       text-decoration: none;
       color: unset;
-      
+
       display: inline-block; /*take up the whole li area, not just the text*/
     }
 
@@ -149,4 +163,5 @@ centered text "JS" and a few links for site navigation
   }
 }
 ```
+{% endcodeblock %}
 

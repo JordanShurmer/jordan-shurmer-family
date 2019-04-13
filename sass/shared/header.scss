@@ -4,7 +4,7 @@ The styles for the site "header"
 The header currently contains a "hero" image, with
 centered text "JS" and a few links for site navigation
  */
-#header {
+#site-header {
   width: 100vw; /*Full width (100 view-width units)*/
   max-width: 1020px; /*but not too big*/
   margin: 0 auto 2em; /*left-right centered, space at the bottom*/
@@ -27,7 +27,7 @@ centered text "JS" and a few links for site navigation
   #hero {
     width: 100%; /*Full Width*/
     max-width: 1020px; /*but not too big*/
-    height: 60vh; /*60 view-height units. most of the #header*/
+    height: 60vh; /*60 view-height units. most of the #site-header*/
 
     position: relative; /*explicit, for the sake of the img's absolute position*/
 
@@ -67,7 +67,7 @@ centered text "JS" and a few links for site navigation
   }
 
   nav {
-    flex-grow: 1; /*take up any remaining space in the #header*/
+    flex-grow: 1; /*take up any remaining space in the #site-header*/
     width: 100%; /*full width*/
     max-width: 1020px; /*but not too big*/
 

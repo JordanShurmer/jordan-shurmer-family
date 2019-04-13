@@ -34,7 +34,7 @@
 
 <body>
 
-<section id="header">
+<section id="site-header">
     {% block header %}
         <!-- A div for the "hero" section.. the large visual at the top -->
         <div id="hero">
@@ -73,10 +73,7 @@
     {% endblock %}
 </section>
 
-<!-- Load the ace editor, and initialize any code blocks on the page -->
 {% block footlib %}
-    <script src="/static/ace/ace.js"></script>
-    <script src="/static/ace/init.js"></script>
 {% endblock %}
 </body>
 </html>

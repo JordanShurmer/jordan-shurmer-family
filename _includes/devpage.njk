@@ -1,0 +1,9 @@
+{% extends "page.njk" %}
+
+
+{% block footlib %}
+    {{ super() }}
+    <!-- Load the ace editor, and initialize any code blocks on the page -->
+    <script src="/static/ace/ace.js"></script>
+    <script src="/web-components/code-block.js"></script>
+{% endblock %}

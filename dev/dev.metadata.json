@@ -1,5 +1,5 @@
 {
-  "layout": "page",
+  "layout": "devpage",
   "heroImage": "/static/heroes/default.jpg",
   "tags": ["dev"]
 }

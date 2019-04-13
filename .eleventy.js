@@ -1,6 +1,7 @@
 module.exports = function (eleventyConfig) {
     // Satic things
     eleventyConfig.addPassthroughCopy("static");
+    eleventyConfig.addPassthroughCopy("web-components");
     eleventyConfig.addPassthroughCopy("legero.js");
 
     eleventyConfig.addPassthroughCopy("android-chrome-192x192.png");
@@ -16,25 +17,26 @@ module.exports = function (eleventyConfig) {
     const toc = require('eleventy-plugin-nesting-toc');
     eleventyConfig.addPlugin(toc);
 
-
     // Markdown (including adding IDs to the headers)
     const markdownIt = require('markdown-it');
     const markdownItAnchor = require('markdown-it-anchor');
-    eleventyConfig.setLibrary("md",
-        markdownIt({
-            html: true,
-            linkify: true,
-            typographer: true,
-        }).use(markdownItAnchor, {})
-    );
+    const md = markdownIt({
+        html: true,
+        linkify: true,
+        typographer: true,
+    }).use(markdownItAnchor, {});
+    eleventyConfig.setLibrary("md", md);
 
+    // CodeBlock shortcode
+    eleventyConfig.addPairedShortcode("codeblock", function (code, lang) {
+        return `<code-block lang="${lang}" readOnly maxLines="30">${md.render(code)}</code-block>`
+    });
 
     // Date filter
     // https://www.npmjs.com/package/nunjucks-date
     const nunjucksDate = require('nunjucks-date');
     nunjucksDate.setDefaultFormat('MMMM Do YYYY');
     eleventyConfig.addFilter('date', nunjucksDate);
-
 
 
     return {
