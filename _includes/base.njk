@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8"/>
     <!--Let browser know website is optimized for mobile-->
@@ -32,7 +33,7 @@
 
 </head>
 
-<body>
+<body class="{{ tags }}">
 
 <section id="site-header">
     {% block header %}
@@ -70,10 +71,17 @@
 
 <section id="footer">
     {% block footer %}
+        <span>Made by Jordan Shurmer</span>
+        <span>Made with &lt;3 • <a target="_blank" href="https://11ty.io/">eleventy</a> • and <a target="_blank"
+                                                                                                 href="https://sass-lang.com/">scss</a></span>
+        <span>View on <a href="https://github.com/JordanShurmer/jordan-shurmer-family">Github</a></span>
+
     {% endblock %}
 </section>
 
 {% block footlib %}
 {% endblock %}
+
 </body>
+
 </html>
