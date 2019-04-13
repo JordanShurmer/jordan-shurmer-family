@@ -59,7 +59,6 @@ centered text "JS" and a few links for site navigation
   margin: 0 auto 2em; /*left-right centered, space at the bottom*/
   height: 66vh; /*more than half the view-height*/
 
-
   /*
   The Layout of the header
   ---------------------------
@@ -113,6 +112,13 @@ centered text "JS" and a few links for site navigation
       /*clear spacing things*/
       margin: 0;
       padding: 0;
+
+      /*Customize the heading text for the dev section, which has
+      a dark colored hero image*/
+      .dev & {
+        color: lightgray;
+        mix-blend-mode: difference;
+      }
     }
   }
 
