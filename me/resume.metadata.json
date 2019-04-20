@@ -1,4 +1,5 @@
 {
   "title": "Resume",
-  "template": "resume"
+  "template": "resume",
+  "exclueFromSitemap": true
 }
