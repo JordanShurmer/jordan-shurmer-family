@@ -45,6 +45,10 @@ centered text "JS" and a few links for site navigation
       position: absolute; /*take it out of the flow, so we can center the text more easily*/
 
       z-index: -1; /*and layer it behind the text*/
+
+      .books & {
+        filter: blur(0.7px) grayscale(65%);
+      }
     }
 
     h1 {
@@ -68,7 +72,11 @@ centered text "JS" and a few links for site navigation
       a dark colored hero image*/
       .dev & {
         color: lightgray;
-        mix-blend-mode: difference;
+        mix-blend-mode: hard-light;
+      }
+
+      .books & {
+        mix-blend-mode: hard-light;
       }
     }
   }
