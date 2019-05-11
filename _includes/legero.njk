@@ -48,7 +48,13 @@
 {% block footlib %}
     {{ super() }}
 
-    <script src="/legero.js"></script>
-
+<!-- Load the crossway API (or provide your own, see below) -->
+<script src="https://cdn.jsdelivr.net/npm/web-components-scripture@1/crossway.js"></script>
+<script>
+    //create the 'crosswayApi' object being referenced
+    const crosswayApi = new Crossway('a0e122c0b20aee5601d9a6ea50e16194f5131eda');
+</script>
+<!-- Load the web components -->
+<script src="https://cdn.jsdelivr.net/npm/web-components-scripture@1/scripture.js"></script>
 {% endblock %}
 
