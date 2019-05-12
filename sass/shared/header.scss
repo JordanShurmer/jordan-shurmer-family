@@ -71,8 +71,8 @@ centered text "JS" and a few links for site navigation
       /*Customize the heading text for the dev section, which has
       a dark colored hero image*/
       .dev & {
-        color: lightgray;
-        mix-blend-mode: hard-light;
+        color: white;
+        mix-blend-mode: soft-light;
       }
 
       .books & {

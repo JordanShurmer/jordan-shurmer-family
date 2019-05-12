@@ -1,13 +1,13 @@
 #footer {
 
-    margin-top: 5em;
+    margin: 5em auto 1em auto;
     width: 100%;
+    max-width: 1020px; /*but not too big*/
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     font-family: "Roboto Condensed", sans-serif;
-    font-weight: bold;
 
     a {
         text-decoration: none;
