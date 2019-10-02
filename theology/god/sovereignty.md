@@ -51,6 +51,8 @@ God is creator, sustainer, and author of all things. Nothing is outside of his o
   "Job 41:11",
   "Job 42:1-2",
   "Jeremiah 32:27",
+  "Matthew 6:26-28",
+  "Matthew 10:29-30",
   "Mark 14:36",
   "Luke 1:37",
   "Acts 17:24-25",
