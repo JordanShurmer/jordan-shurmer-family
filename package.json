@@ -11,7 +11,8 @@
     "watch": "run-p watch:* serve",
     "watch:eleventy": "eleventy --watch",
     "watch:sass": "sass --watch ./sass:./_site",
-    "serve": "serve ./_site"
+    "serve": "serve ./_site",
+    "checks": "exitzero npm-check -i ace"
   },
   "repository": {
     "type": "git",
@@ -24,13 +25,16 @@
   },
   "homepage": "https://github.com/JordanShurmer/jordan-shurmer-family#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.8.3",
-    "eleventy-plugin-nesting-toc": "^1.0.0",
-    "markdown-it-anchor": "^5.0.2",
+    "@11ty/eleventy": "^0.9.0",
+    "eleventy-plugin-nesting-toc": "^1.1.0",
+    "exitzero": "^1.0.1",
+    "markdown-it": "^10.0.0",
+    "markdown-it-anchor": "^5.2.4",
+    "npm-check": "^5.9.0",
     "npm-run-all": "^4.1.5",
-    "nunjucks-date": "^1.3.0",
-    "sass": "^1.18.0",
-    "serve": "^11.0.0"
+    "nunjucks-date": "^1.4.0",
+    "sass": "^1.23.0",
+    "serve": "^11.2.0"
   },
   "dependencies": {}
 }
