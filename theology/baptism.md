@@ -49,15 +49,26 @@ Faith is the moment we are justified, not baptism. If baptism is, then faith is 
 This is the biggest issue I have with the doctrine that baptism is the time at which one is united to christ. This _seems to_ contradict the teaching, essential to christianity, that justification is through faith alone. Specifically, this would seem to contradict the following verses. If baptism is the moment that justification happens, then these verses must be interpreted in a way that doesn't take them at their most plain meaning
 
 {{ scripture.list([
-  "Romans 3:25-26",
-  "Romans 4:1-5",
+  "Acts 10:43",
+  "Acts 13:39",
+  "Acts 15:9",
+  "Acts 16:31",
+  "Romans 1:16-17",
+  "Romans 3:22-30",
+  "Romans 4:1-5, 9-13",
   "Romans 4:24-5:2",
+  "Romans 9:30",
+  "Romans 10:6, 9-17",
+  "1 Corinthians 15:2",
   "Galatians 2:16",
-  "Galatians 3:2-6",
-  "Galatians 3:26-27",
+  "Galatians 3:2-9, 14",
+  "Galatians 3:22-27",
+  "Galatians 5:6",
   "Ephesians 1:13",
-  "1 John 5:1-5",
-  "Philippians 3:8-9"
+  "Ephesians 2:8",
+  "Philippians 3:8-9",
+  "2 Timothy 3:15",
+  "1 John 5:1-5"
   ]) }}
 
 
