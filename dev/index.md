@@ -8,3 +8,6 @@ Books
 -----
 
 * [The Pragmatic Programmer](./pragmatic-programmer)
+
+All Dev Pages
+-------------
