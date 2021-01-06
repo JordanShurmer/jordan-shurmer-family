@@ -1,6 +1,8 @@
-Jordan's Website
-================
+---
+title: Welcome
+layout: layouts/base.njk
+---
 
-Welcome to Jordan's website! There's not much to see here...
+# Welcome
 
-Click around in the navigation above to explore
+Welcome to my site. Have a look around.

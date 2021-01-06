@@ -1,3 +1,6 @@
+---
+templateEngine: css,njk
+---
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
@@ -13,23 +16,14 @@
 
     <title>{% block title %}{{ title }}{% endblock %} | Jordan Shurmer</title>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137352443-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'UA-137352443-1');
-    </script>
-
-    {% block headlast %}
-        <link rel="stylesheet" href="/base.css">
-    {% endblock %}
+        <style>
+            @import "../typography.css";
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
 
 </head>
 
@@ -66,6 +60,7 @@
 
 <main id="main">
     {% block main %}
+        {{ content | safe }}
     {% endblock %}
 </main>
 
