@@ -1,4 +1,4 @@
-import css from "https://deno.land/x/lume/plugins/css.js";
+import postcss from "https://deno.land/x/lume/plugins/postcss.js";
 import lume from "https://deno.land/x/lume/mod.js";
 
 const site = lume();
@@ -10,6 +10,8 @@ site.ignore("README.md", "vscode.code-workspace")
 site.copy("static/favicon", "/")
 site.copy("static")
 
-site.use(css({ map: true }));
+site.use(postcss({
+    sourceMap: true
+}));
 
 export default site;

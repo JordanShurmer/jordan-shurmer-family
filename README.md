@@ -10,27 +10,26 @@ A website for Jordan's notes and thoughts and things.
 Development
 -----------
 
-This is an [11ty](https://11ty.io) project, so you can use `eleventy` to serve the site from `localhost` while working on it.
+This is a [Lume](https://lumeland.github.io/) project, so you can use `lume` to serve the site from `localhost` while working on it.
 
 ```
-eleventy --serve
+lume --serve
 ```
 
 Building
 --------
 
-Built as a static site, using Eleventy
+Built as a static site, using lume
 
 ```
-npm install
-npm run build # will compile the sass and then build with eleventy
+lume
 ```
 
 
 Hosting
 -------
 
-Currently hosted using [netlify](https://www.netlify.com). It should auto-publish when you push a change to `master`.
+Currently, hosted using [netlify](https://www.netlify.com). It should auto-publish when you push a change to `master`.
 
 
 

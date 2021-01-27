@@ -1,6 +1,3 @@
----
-templateEngine: css,njk
----
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
@@ -16,14 +13,10 @@ templateEngine: css,njk
 
     <title>{% block title %}{{ title }}{% endblock %} | Jordan Shurmer</title>
 
-        <style>
-            @import "../typography.css";
-            html,
-            body {
-                margin: 0;
-                padding: 0;
-            }
-        </style>
+    {% block headlast %}
+        <link rel="stylesheet" href="css\base.css" >
+
+    {% endblock %}
 
 </head>
 
