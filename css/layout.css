@@ -1,6 +1,7 @@
 main {
     width: 95%;
     margin: auto;
+    min-height: 20vh;
 }
 
 @media (min-width: 780px) {
