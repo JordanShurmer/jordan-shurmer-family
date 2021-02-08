@@ -1,3 +1,8 @@
+---
+title: Development
+layout: layouts/index-page.njk
+---
+
 Dev Notes
 ===========
 

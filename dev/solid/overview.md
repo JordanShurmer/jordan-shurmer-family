@@ -1,3 +1,7 @@
+---
+title: "Solid Project - My Thoughts"
+---
+
 Solid Overview
 ==============
 

@@ -1,0 +1,17 @@
+{% extends "./base.njk" %}
+
+{% block main %}
+
+    {{ content | safe }}
+
+    <ul>
+        {% for article in search.pages(slug) %}
+            {% if not article.data.draft and article.data.url !== url %}
+                <li>
+                    <a href="{{ article.data.url | url }}">{{ article.data.title }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+
+{% endblock main %}

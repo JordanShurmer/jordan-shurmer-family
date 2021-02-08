@@ -1,5 +1,11 @@
+---
+title: Atonement
+headline: The Atonement
+description: "A look into the Atonement: the most glorious of the christian doctrines, the crux of christianity"
+date: 2019-02-20
+templateEngine: njk,md
+---
 {% import "macros/scripture.njk" as scripture %}
-
 
 
 ## Introduction
@@ -79,7 +85,7 @@ I was in bondage to my sin and to Satan, and needed someone to provide redemptio
  
 ## Resources
 
-These are some of the resources I have found helpful on the topic of the atonement
+These are some resources I have found helpful on the topic of the atonement
 
 ### Online
 

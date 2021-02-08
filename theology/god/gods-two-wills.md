@@ -1,3 +1,10 @@
+---
+title: God's Two Wills
+description: A look into my view of the so-called \"two wills\" of God
+draft: true
+templateEngine: njk,md
+---
+
 {% import "macros/scripture.njk" as scripture %}
 
 ## Introduction

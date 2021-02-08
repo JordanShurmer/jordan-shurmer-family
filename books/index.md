@@ -1,3 +1,7 @@
+---
+title: Books
+layout: layouts/index-page.njk
+---
 # Books
 
 My thoughts on various books I've read. Some reviews, some random remarks, etc.

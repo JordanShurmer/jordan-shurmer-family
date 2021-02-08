@@ -1,3 +1,10 @@
+---
+title: Baptism
+date: 2019-01-30
+description: "A look into my views on baptism. In particular, a response to the Churches of Christ understanding of baptism."
+templateEngine: njk,md
+---
+
 {% import "macros/scripture.njk" as scripture %}
 
 <section>

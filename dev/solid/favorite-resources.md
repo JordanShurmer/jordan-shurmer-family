@@ -1,3 +1,7 @@
+---
+title: Solid Resources
+---
+
 Solid Resources
 ===============
 

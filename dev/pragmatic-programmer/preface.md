@@ -1,6 +1,8 @@
-# The Pragmatic Progammer: Preface
+---
+title: "Pragmatic Programmer: Preface"
+---
 
-{{ page.tags }}
+# The Pragmatic Programmer: Preface
 
 > This book will help you become a better programmer
 

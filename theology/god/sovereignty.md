@@ -1,3 +1,10 @@
+---
+title: Sovereignty
+description: "A look into my view of God's sovereignty"
+date: 2019-02-20
+headline: God's Sovereignty
+templateEngine: njk,md
+---
 {% import "macros/scripture.njk" as scripture %}
 
 <section>

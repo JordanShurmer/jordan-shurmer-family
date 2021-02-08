@@ -1,3 +1,8 @@
+---
+title: The Pragmatic Programmer
+layout: layouts/index-page.njk
+---
+
 The Pragmatic Programmer
 ========================
 

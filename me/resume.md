@@ -1,3 +1,8 @@
+---
+title: Resume
+draft: true
+---
+
 Jordan E. Shurmer
 =================
 

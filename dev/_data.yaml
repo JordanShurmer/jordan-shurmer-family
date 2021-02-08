@@ -1,0 +1,4 @@
+layout: layouts/devpage.njk
+heroImage: /static/heroes/commits.jpg
+tags:
+  - dev

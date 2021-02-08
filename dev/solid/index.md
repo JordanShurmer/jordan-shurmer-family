@@ -1,3 +1,8 @@
+---
+title: Solid Project
+layout: layouts/index-page.njk
+---
+
 SoLiD
 =====
 
