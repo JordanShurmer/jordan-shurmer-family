@@ -1,9 +1,52 @@
-html,
-body {
+@import './layout.css';
+@import './typography.css';
+
+html, body {
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    font-size: 1.563em;
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+// Theme Stuff
+:root {
+    --bg-color: unset;
+    --color: #333;
+    --color-link: unset;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #212124;
+        --color: #b1b0b0;
+        --color-link: #6680ff;
+    }
+}
+
+
+body {
+    background-color: var(--bg-color);
+}
+
+main {
+    background-color: var(--bg-color);
+    color: var(--color);
+}
+
+a {
+    color: var(--color-link);
+}
+
+@media (prefers-color-scheme: dark) {
+
+    #site-header img {
+        opacity: .6;
+    }
 }
