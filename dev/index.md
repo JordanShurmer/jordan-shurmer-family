@@ -2,11 +2,10 @@
 title: Software Dev
 layout: layouts/index-page.njk
 templateEngine: njk,md
-heroImage: /static/heroes/commits.jpg
 ---
 
 Dev Notes
-===========
+=========
 Some of my notes, thoughts, and experiments in the world of software engineering.
 
 

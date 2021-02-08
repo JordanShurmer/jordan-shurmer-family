@@ -5,10 +5,10 @@
     {{ content | safe }}
 
     <ul>
-        {% for article in collections[page.fileSlug] %}
-            {% if not article.data.draft and article.url !== page.url %}
+        {% for article in search.pages(slug) %}
+            {% if not article.data.draft and article.data.url !== url %}
                 <li>
-                    <a href="{{ article.url }}">{{ article.data.title }}</a>
+                    <a href="{{ article.data.url | url }}">{{ article.data.title }}</a>
                 </li>
             {% endif %}
         {% endfor %}

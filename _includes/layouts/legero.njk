@@ -1,8 +1,8 @@
-{% extends "page.njk" %}
+{% extends "./base.njk" %}
 
 {% block headlast %}
     {{ super() }}
-    <link rel="stylesheet" href="/legero/legero.css">
+    <link rel="stylesheet" href="/css/legero.css">
 {% endblock headlast %}
 
 {% block main %}
@@ -27,21 +27,13 @@
             {{ description }}
         </p>
 
-        {{ content | toc | safe }}
+{#    TODO: build a table of contents dynamically      #}
+{#        {{ content | toc | safe }}#}
 
         <section itemprop="articleBody">
             {{ content | safe }}
         </section>
     </article>
-
-    <section id="comments">
-
-        <h1>Comments:</h1>
-
-        <!-- The container for the comments-->
-        <div id="disqus_thread"></div>
-
-    </section>
 
 {% endblock main %}
 

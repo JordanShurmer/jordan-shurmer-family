@@ -32,9 +32,7 @@ main {
     justify-content: flex-start; /*starting at the top*/
 
 
-    box-shadow: 0 0 2px rgba(0, 0, 0, .2);
-    /*A slight box-shadow
-      to differentiate the header from the body*/
+    box-shadow: 0 0 2px var(--shadow-color); /*A slight box-shadow to differentiate the header from the body*/
 
     & #hero {
         width: 100%;
