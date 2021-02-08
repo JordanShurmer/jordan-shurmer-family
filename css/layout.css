@@ -129,10 +129,7 @@ main {
 }
 
 #footer {
-    margin: 5em auto 0em auto;
-    position: absolute;
-    bottom: 0;
-    left: 2.5vw;
+    margin: 5em auto .5em auto;
     width: 95vw;
     max-width: 1020px; /*but not too big*/
     display: flex;
