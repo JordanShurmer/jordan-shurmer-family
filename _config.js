@@ -1,5 +1,6 @@
-import postcss from "https://deno.land/x/lume@v0.14.0/plugins/postcss.js";
-import lume from "https://raw.githubusercontent.com/JordanShurmer/lume/8880f6332a317814c1b3a3ea4906d58087672eee/mod.js";
+import { basename } from "https://deno.land/std@0.99.0/path/mod.ts";
+import postcss from "lume/plugins/postcss.js";
+import lume from "lume/mod.js";
 
 const site = lume();
 
@@ -18,5 +19,9 @@ site.copy("static")
 site.use(postcss({
     sourceMap: true
 }));
+
+site.data("slug", (path='unspecified') => {
+    return basename(path) === "index" ? basename(path?.slice(0, -5)) : basename(path)
+})
 
 export default site;
