@@ -1,6 +1,6 @@
 import { basename } from "https://deno.land/std@0.99.0/path/mod.ts";
-import postcss from "lume/plugins/postcss.js";
-import lume from "lume/mod.js";
+import postcss from "https://deno.land/x/lume@v0.23.2/plugins/postcss.js";
+import lume from "https://deno.land/x/lume@v0.23.2/mod.js";
 
 const site = lume();
 
