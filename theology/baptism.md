@@ -127,3 +127,10 @@ Before someone is born again and united to christ they are spiritually dead, can
 This one is more of an observation that I find surprising, if baptism is really the dividing line between a true born-again Christian and everyone else. All through the New Testament christians are called believers, and are never called _the immersed_, or some such thing. To me, this implies that the belief is the crucial point in Christianity, not immersion.
 
 </section>
+
+
+## Other Issues
+
+I have frequently seen the argument made that "every recorded example of salvation" includes baptism. **This is simply not true**. I've created a page that lists out [every conversion in Acts](./conversions-in-acts), so you can see for yourself.
+
+One response I've had to this list is that most of those are just quick mentions, not including any details, and all the detailed ones do include baptism. However, this is only true if "detailed" means "includes baptisms". In other words, imagine if Acts 13:12 included the proconsul getting baptised. It would then be included in the list of salvation accounts which include baptism. Since it doesn't include baptism, it must be a salvation account which doesn't include baptism.
