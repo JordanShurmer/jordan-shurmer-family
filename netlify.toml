@@ -1,3 +1,6 @@
 [build]
   publish = "_site"
-  command = "mkdir -p _site && curl -fsSL https://deno.land/x/install/install.sh | sh && /opt/buildhome/.deno/bin/deno run --unstable -A https://deno.land/x/lume@v0.23.2/cli.js --location=https://jordan.shurmer.family"
+  command = """
+      curl -fsSL https://deno.land/x/install/install.sh | sh && \
+      /opt/buildhome/.deno/bin/deno task build \
+    """
