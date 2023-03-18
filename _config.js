@@ -2,7 +2,7 @@ import { basename } from "https://deno.land/std@0.180.0/path/mod.ts";
 import lume from "https://deno.land/x/lume@v1.15.3/mod.ts";
 import postcss from "https://deno.land/x/lume@v1.15.3/plugins/postcss.ts";
 
-const site = lume({});
+const site = lume();
 
 // Ignore repo files that aren't part of the site
 site.ignore("README.md")
