@@ -101,8 +101,6 @@ main {
 
         line-height: 6vh; /*should be the remaining space.. to center the nav items vertically*/
 
-        font-family: 'Roboto Condensed', sans-serif; /*using site heading font*/
-
         & a {
             /*no link styles in the nav*/
             text-decoration: none;
@@ -135,7 +133,7 @@ main {
     flex-flow: row wrap;
     justify-content: space-between;
 
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: 'Gentium Book Basic', serif;
 
     & a {
         text-decoration: none;
