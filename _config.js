@@ -1,6 +1,6 @@
 import { basename } from "https://deno.land/std@0.180.0/path/mod.ts";
 import lume from "https://deno.land/x/lume@v1.15.3/mod.ts";
-import postcss from "https://deno.land/x/lume@v1.15.3/plugins/postcss.ts";
+import lightningCss from "https://deno.land/x/lume@v1.15.3/plugins/lightningcss.ts";
 
 const site = lume();
 
@@ -11,9 +11,7 @@ site.ignore("README.md")
 site.copy("static/favicon", "/")
 site.copy("static")
 
-site.use(postcss({
-    sourceMap: true
-}));
+site.use(lightningCss());
 
 
 site.data("slug", (path='unspecified') => {
