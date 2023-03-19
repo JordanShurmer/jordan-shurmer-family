@@ -15,7 +15,6 @@
         {% endif %}
 
         <div id="metadata">
-            By <a href="/me" itemprop="author publisher">{{ author | default("Jordan Shurmer") }}</a>.
             {% if page.date %}
                 Published
                 <meta itemprop="datePublished" content="{{ page.date }}">{{ page.date | date }}

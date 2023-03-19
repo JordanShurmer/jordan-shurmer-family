@@ -24,6 +24,7 @@ main article aside {
     border-bottom: 1px solid black;
     /* font-size: .8em; */
     padding-top: 1.6em;
+
 }
 
 @media (min-width: 1200px) {
@@ -42,6 +43,12 @@ main article aside {
 main section, aside {
     display: flow-root; /*let each section be a unique flow root*/
     margin: 2.75rem 0 0;
+
+    &.wip {
+        margin: 0 0 2.75rem;
+        backdrop-filter: brightness(1.5);
+        text-align: center;
+    }
 }
 
 /***

@@ -49,12 +49,21 @@
                     <a href="/dev/">Software</a>
                 </li>
                 <li>
+                    <a href="/media/">Media</a>
+                </li>
+                <li>
                     <a href="/me/">About</a>
                 </li>
             </ul>
         </nav>
     {% endblock %}
 </section>
+
+{% if wip %}
+<aside class="wip">
+    <em>Note:</em> This page is a work in progress.
+</aside>
+{% endif %}
 
 <main id="main">
     {% block main %}
