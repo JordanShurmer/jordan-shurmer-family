@@ -21,6 +21,6 @@ In the monoluge Ren explains his view on the old battle of good vs evil. He says
 
 You can see these ideas play out through thte course of the song.
 
-Teh falcetto voice represents him embracing the "dance" aspect.
+The falcetto voice represents him embracing the "dance" aspect.
 
 The lyrical part shows the battle aspect. The good voice starts calm and clear, countering every criticism with its own valid remarks. As they progress, however, the calm voice becomes more intense and ends up loosing all control with descriptive threats of death and lossing the ability to speak clearly.
