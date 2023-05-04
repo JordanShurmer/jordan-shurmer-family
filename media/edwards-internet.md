@@ -1,4 +1,3 @@
-
 ---
 title: Jonathan Edwards Predicts the Internet
 ---
