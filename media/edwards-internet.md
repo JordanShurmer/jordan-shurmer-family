@@ -1,3 +1,4 @@
+
 ---
 title: Jonathan Edwards Predicts the Internet
 ---
@@ -8,6 +9,8 @@ Thanks to [Matthew Everhard's tweet](https://twitter.com/matt_everhard/status/16
 
 
 You can read this on page 42 of [the original](https://collections.library.yale.edu/catalog/2065879) (near the top, starting with _Millenium_), if you can manage to read his writing. I coped the text above from Matthew Everhard's [Youtube video](https://www.youtube.com/watch?v=AH213SXhOGU).
+
+![Original Script of Misc 262](/static/img/edwards-internet-og.png)
 
 Edwards is saying that he thinks society will continue to progress, with new inventions and technology, to a point where global communication will be easy and safe. He essentially ties this to God's work of building his kingdom, equipping the saints to focus on things that "directly concern their mind and religion". In his view this is making our societies "more like heaven"!
 
