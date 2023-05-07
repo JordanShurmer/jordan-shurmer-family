@@ -21,7 +21,7 @@ main {
     width: 100vw; /*Full width (100 view-width units)*/
     max-width: 1020px; /*but not too big*/
     margin: 0 auto 2em; /*left-right centered, space at the bottom*/
-    height: 66vh; /*more than half the view-height*/
+    height: 39vh;
 
     /*
     The Layout of the header
@@ -37,7 +37,7 @@ main {
 
     & #hero {
         width: 100%;
-        height: 60vh;
+        height: 33vh;
 
         position: relative; /*explicit, for the sake of the img's absolute position*/
 
@@ -65,10 +65,10 @@ main {
         & h1 {
             /* HERO TEXT */
             font-family: stoke, sans-serif; /*Fancy Font Family*/
-            font-size: 9.313em; /*Giant size*/
+            font-size: 9.313rem; /*Giant size*/
 
 
-            line-height: 60vh; /* center it vertically, same line-height as container height*/
+            line-height: 33vh; /* center it vertically, same line-height as container height*/
             text-align: center; /* center ir horizontally */
 
             mix-blend-mode: color-burn;
