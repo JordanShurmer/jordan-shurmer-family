@@ -1,0 +1,44 @@
+/***
+  ___
+ / __)           _
+| |__ ___  ____ | |_   ___
+|  __) _ \|  _ \|  _) /___)
+| | | |_| | | | | |__|___ |
+|_|  \___/|_| |_|\___|___/
+***/
+body {
+    font-family: 'Gentium Book Basic', serif;
+    line-height: 1.45;
+    color: var(--color);
+    font-size: clamp(18px, 0.4vh + 0.4vw + 0.2vmin + 10px, 26px);
+}
+
+p {
+    margin-bottom: 1.25em;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0 0 1rem;
+    font-family: 'Gentium Book Basic', serif;
+    line-height: 1.15;
+}
+
+h1 {
+    font-size: 3.052em;
+}
+
+h2 {
+    font-size: 2.441em;
+}
+
+h3 {
+    font-size: 1.563em;
+}
+
+h4, h5 {
+    font-size: 1.25em;
+}
+
+small, .text_small {
+    font-size: 0.75em;
+}
