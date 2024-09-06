@@ -3,14 +3,10 @@
     <head>
         <?php
 
-        class Page {
-            public string $hero_image = "";
-            public string $title = "";
-        }
-        $page = new Page();
-        $page->title = "Welcome";
-
+        include("data.php");
         include("global_head.php");
+
+        $page->title = "Welcome";
 
         ?>
     </head>
