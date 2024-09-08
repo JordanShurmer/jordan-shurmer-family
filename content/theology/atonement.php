@@ -1,6 +1,5 @@
 <?php
-include "data.php";
-$scripts[] = 
+include "init.php";
 $page->title = "The Atonement";
 
 ob_start();

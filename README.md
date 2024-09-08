@@ -9,14 +9,12 @@ A website for Jordan's notes and thoughts and things.
 Development
 -----------
 
-This is a plain PHP project
+This is a plain PHP project.
 
-jordan.shurmer.family
-   | -> content/index.html # the html/php
-   | -> config/php.ini     # the server configuration
-   | -> styles/main.css    # the CSS
-   | -> client/main.js     $ the JS
-
+* [./install.sh](/install.sh): Install the config files and start php/nginx
+* [./config](/config): Server configuration
+* [./content](/content): The website, file based url structure
+* [./partials](/partials): things to easily import in php
 
 Hosting
 -------

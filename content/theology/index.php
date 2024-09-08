@@ -1,5 +1,5 @@
 <?php
-include "data.php";
+include "init.php";
 $page->title = "Theology";
 
 ob_start();
@@ -10,12 +10,12 @@ ob_start();
 <p>Some of my notes and musings on theological topics can be found here</p>
 
 <ul>
-    <li><a href="god/sovereignty.md">God's sovereignty</a></li>
-    <li><a href="atonement.md">The Atonement</a></li>
-    <li><a href="baptism.md">Baptism</a></li>
-    <li><a href="regeneration.md">Regeneration</a></li>
-    <li><a href="conversions-in-acts.md">Church Growth in Acts</a></li>
-    <li><a href="god/gods-two-wills.md">God's two wills?</a></li>
+    <li><a href="god/sovereignty">God's sovereignty</a></li>
+    <li><a href="atonement">The Atonement</a></li>
+    <li><a href="baptism">Baptism</a></li>
+    <li><a href="regeneration">Regeneration</a></li>
+    <li><a href="conversions-in-acts">Church Growth in Acts</a></li>
+    <li><a href="god/gods-two-wills">God's two wills?</a></li>
 </ul>
 
 <?php $main = ob_get_clean(); ?>

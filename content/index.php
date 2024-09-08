@@ -3,8 +3,8 @@
     <head>
         <?php
 
-        include("data.php");
-        include("global_head.php");
+        include "init.php";
+        include "global_head.php";
 
         $page->title = "Welcome";
 
