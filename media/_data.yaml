@@ -1,4 +1,0 @@
-heroImage: /static/heroes/books.jpg
-layout: layouts/legero.njk
-tags:
-  - media
