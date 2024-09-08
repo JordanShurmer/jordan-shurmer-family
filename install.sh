@@ -1,0 +1,14 @@
+# install (i.e. copy) the config files
+install -D --backup=numbered ./config/php.ini-production /etc/php/8.3/fpm/php.ini
+install -D --backup=numbered ./config/nginx.conf /etc/nginx/sites-enabled/jordan.shurmer.family
+
+# mount the content directories
+mkdir -p /var/www/jordan.shurmer.family/html
+mount --bind $(pwd)/content /var/www/jordan.shurmer.family/html
+mkdir -p /var/www/jordan.shurmer.family/partials
+mount --bind $(pwd)/partials /var/www/jordan.shurmer.family/partials
+
+# restart the servers
+systemctl restart php8.3-fpm
+systemctl restart nginx
+
