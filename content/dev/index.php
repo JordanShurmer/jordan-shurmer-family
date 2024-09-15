@@ -18,12 +18,6 @@ $page->title = "Development";
 
 
 
-    <li>
-        <a href="/dev/this">This Website</a>
-    </li>
-
-
-
 </ul>
 <?php $main = ob_get_clean() ?>
 
