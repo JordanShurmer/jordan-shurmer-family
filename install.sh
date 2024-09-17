@@ -5,8 +5,8 @@ install -D --backup=numbered ./config/nginx.conf /etc/nginx/sites-enabled/jordan
 # mount the content directories
 mkdir -p /var/www/jordan.shurmer.family/html
 mount --bind $(pwd)/content /var/www/jordan.shurmer.family/html
-mkdir -p /var/www/jordan.shurmer.family/partials
-mount --bind $(pwd)/partials /var/www/jordan.shurmer.family/partials
+mkdir -p /usr/local/share/php/partials/jordan
+mount --bind $(pwd)/partials /usr/local/share/php/partials/jordan
 
 # restart the servers
 systemctl restart php8.3-fpm

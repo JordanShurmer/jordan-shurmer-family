@@ -4,7 +4,7 @@
         <?php
 
         include "init.php";
-        include "global_head.php";
+        include "jordan/global_head.php";
 
         $page->title = "Welcome";
 
@@ -13,7 +13,7 @@
 
     <body class="">
 
-        <?php include "header.php" ?>
+        <?php include "jordan/header.php" ?>
 
         <main id="main">
 

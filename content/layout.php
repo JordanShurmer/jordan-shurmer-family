@@ -2,13 +2,13 @@
 <html>
 
     <head>
-        <?php include "global_head.php"; ?>
+        <?php include "jordan/global_head.php"; ?>
     </head>
 
     <body class="">
 
 
-        <?php include "header.php"; ?>
+        <?php include "jordan/header.php"; ?>
 
 
         <?php if ($page->wip): ?>
