@@ -11,14 +11,16 @@ $page->title = "Development";
 
 <ul>
 
+    <li>
+        <a href="/dev/odin">Odin</a>
+    </li>
 
     <li>
         <a href="/dev/scripture-web-components">Web Components: Scripture</a>
     </li>
 
-
-
 </ul>
+
 <?php $main = ob_get_clean() ?>
 
 <?php include "layout.php" ?>

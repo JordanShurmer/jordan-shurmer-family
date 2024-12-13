@@ -24,7 +24,7 @@
 
 
         <section id="footer">
-            <span>Built by <a target="_blank" href="https://aule.technology">Aulë Tech</a></span>
+            <span>Built by <a target="_blank" href="https://x.com">Jordan Shurmer</a></span>
         </section>
 
 
