@@ -17,6 +17,12 @@
             </aside>
         <?php endif; ?>
 
+        <?php if(!empty($left)): ?>
+        <aside id="left">
+            <?php echo $left; ?>
+        </aside>
+        <?php endif; ?>
+
 
         <main id="main">
             <?php echo $main ?? "" ?>
