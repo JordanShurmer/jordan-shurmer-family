@@ -18,7 +18,7 @@ p {
 }
 
 h1, h2, h3, h4, h5 {
-    margin: 0 0 1rem;
+    margin: 1rem 0 1rem;
     font-family: 'Gentium Book Basic', serif;
     line-height: 1.15;
 }

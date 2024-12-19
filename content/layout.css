@@ -9,6 +9,10 @@ main {
     flex-grow: 1;
 }
 
+details {
+    margin-bottom: 2rem;
+}
+
 @media (min-width: 780px) {
     main {
         max-width: 1020px;
