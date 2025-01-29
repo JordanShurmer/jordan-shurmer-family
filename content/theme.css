@@ -4,8 +4,8 @@ colors, etc.
  */
 
 :root {
-    --bg-color: unset;
-    --bg-alt: #eee8c4;
+    --bg-color: #fff;
+    --bg-alt: #a79d8c;
     --color: #333;
     --color-link: unset;
     --shadow-color: rgba(0,0,0,.2)

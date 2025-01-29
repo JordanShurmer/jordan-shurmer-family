@@ -16,8 +16,6 @@ $page->title = "Resume";
 
     <title>Jordan Shurmer&apos;s Resume</title>
 
-
-
     <style>
     @import 'theme.css';
     body {
@@ -28,71 +26,27 @@ $page->title = "Resume";
         background-color: var(--bg-alt);
     }
 
-    a { color: inherit; }
 
     .container {
         max-width: 72ch;
         margin-block: 2ch;
         margin-inline: auto;
-        padding: 20px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
+        padding: 2ch;
+        border-radius: 1ch;
         background-color: var(--bg-color);
     }
 
-    header {
-        text-align: center;
-        margin-bottom: 20px;
-    }
+    section { margin-block-end: 1.5em; }
 
-    header h1 {
-        margin: 0;
-        font-size: 2em;
-    }
+    h2 { border-bottom: 2px solid rgb(from var(--color) r g b /  0.5); }
 
-    header p {
-        margin: 5px 0;
-    }
+    p, blockquote { text-align: justify; }
 
-    section {
-        margin-bottom: 20px;
-    }
+    cite { font-style: inherit; }
 
-    section h2 {
-        font-size: 1.5em;
-        margin-bottom: 10px;
-        border-bottom: 2px solid #333;
-        padding-bottom: 5px;
-    }
+    a { color: inherit; }
+    a[href*=mailto] { text-decoration: none; }
 
-    section p, section ul {
-        margin: 0 0 10px 0;
-    }
-
-    ul {
-        padding-left: 20px;
-    }
-
-    ul li {
-        margin-bottom: 5px;
-    }
-
-    .contact-info {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .contact-info div {
-        margin-bottom: 10px;
-        flex: 1 1 45%;
-    }
-
-    @media (max-width: 600px) {
-        .contact-info div {
-            flex: 1 1 100%;
-        }
-    }
     </style>
 
 
@@ -112,21 +66,26 @@ window.cssScope ??= new MutationObserver(mutations => { // Allow 1 observer.
         node.setAttribute('ready', '')
     })
 }).observe(document.documentElement, {childList: true, subtree: true})
-</script>
+    </script>
 </head>
 
 <body>
     <div class="container">
 
         <header>
+            <style>
+            this { text-align: center; }
+            this h1 { margin: 0; }
+            </style>
 
             <h1 class="mono">Jordan Shurmer</h1>
 
             <ul>
+
                 <style>
-                me { list-style: none;   margin: 1ch 0;  padding: 0; }
-                me { text-align: center; line-height: 1; }
+                this { list-style: none; margin: 1ch 0; padding: 0; }
                 </style>
+
                 <li>Software Development.</li>
                 <li>
                     &lt;<a href="mailto:resume@shurmer.family">resume@shurmer.family</a>&gt;
@@ -136,13 +95,6 @@ window.cssScope ??= new MutationObserver(mutations => { // Allow 1 observer.
         </header>
 
         <section>
-            <blockquote>
-                <style> me { text-align: justify } </style>
-
-                the delight and pride of Aulë is in the deed of making, and in the 
-                thing made, and neither in possession nor in his own mastery.
-                <br><cite> &mdash; The Silmarillion by J.R.R Tolkien</cite>
-            </blockquote>
         </section>
 
         <section>
@@ -151,10 +103,16 @@ window.cssScope ??= new MutationObserver(mutations => { // Allow 1 observer.
 
             <p>
 
-                An experienced software engineer, application architect, and tinkerer.
+                A software engineer, application architect, and tinkerer.
                 I have done Software Development in various capicities for over 12 years.
+                I am also a father of 4 and husband of 1.
 
-            </p>
+            <blockquote>
+                <style>this { padding-inline: 4ch; }</style>
+                <em>the delight and pride of Aulë is in the deed of making, and in the 
+                    thing made, and neither in possession nor in his own mastery.</em>
+                <br><cite><strong> &mdash; The Silmarillion</strong> by J.R.R Tolkien</cite>
+            </blockquote>
 
         </section>
 
@@ -166,11 +124,11 @@ window.cssScope ??= new MutationObserver(mutations => { // Allow 1 observer.
             </p>
 
             <style>
-            me p:not(:first-of-type) {padding-inline: 1ch;}
-            me p:not(:first-of-type) {text-align: justify;}
-            me p:not(:first-of-type) { margin-block-end: 3ch; }
+            this p:not(:first-of-type) {padding-inline-start: 3ch;}
+            this ul {padding-inline-start: 6ch;}
+            this p:not(:first-of-type) { margin-block-end: 3ch; }
 
-            me ul { margin: 2ch; }
+            this ul { margin: 2ch; }
             </style>
 
 
@@ -181,13 +139,13 @@ window.cssScope ??= new MutationObserver(mutations => { // Allow 1 observer.
                 projects from scratch, created failing projects from scratch, maintained
                 decades old projects, decommessioned projects, mentored other engineers,
                 advised other teams, scaled applications horizontally and vertically, and
-                generally try to improve things that I can get my hands on.
+                generally try to improve everything that I can get my hands on.
 
             </p>
 
             <p>
 
-                Some languages and frameworks I am comfortable with:
+                Some languages and frameworks I have developed with:
 
                 <ul>
                     <li>The web (i.e. HTML, CSS, Javascript, and HTTP)</li>
@@ -195,7 +153,14 @@ window.cssScope ??= new MutationObserver(mutations => { // Allow 1 observer.
                     <li>HTMX</li>
                     <li>React, Svelte, <strong>and</strong> Vue</li>
                     <li>Kotlin</li>
-                    <li></li>
+                    <li>Make, Maven, Grunt, Gulp, Webpack, Rollup, Gradle, and other build systems</li>
+                    <li>Bash, zsh, <strong>and</strong> pwsh</li>
+                    <li>Apache Sling</li>
+                    <li>Function-based routing frameworks (e.g Express JS)</li>
+                    <li>File-based routing frameworks (e.g. SvelteKit)</li>
+                    <li>MySQL, and Oracle SQL</li>
+                    <li>AWS S3, Lambda, DynamoDB, EC2, Cloud*, Route53, &hellip;</li>
+                    <li>Ruby on Rails</li>
                 </ul>
 
             </p>
@@ -217,7 +182,9 @@ window.cssScope ??= new MutationObserver(mutations => { // Allow 1 observer.
                     <li>internal tools for developers</li>
                     <li>Hypermedia APIs (e.g. dynamically loading
                         <a href="https://www.hgtv.com/design/ultimate-house-hunt/2023/countryside-retreats/historic-asheville-home">
-                            photo galleries</a>)
+                            photo</a>
+                        <a href="https://www.foodnetwork.com/recipes/photos/prime-rib-recipes">
+                            galleries</a>)
                     </li>
                     <li>continuous deployment piplines</li>
                     <li>technical documentation</li>
@@ -231,29 +198,40 @@ window.cssScope ??= new MutationObserver(mutations => { // Allow 1 observer.
         </section>
 
         <section>
+            <h2>Other Work &amp; Side Projects</h2>
+
+            I spend some of my free time tinkering with all kinds of software.
+
+            Here are a few completed examples:
+
+            <ul>
+                <li><a href="https://jordan.shurmer.family">jordan.shurmer.family</a>:
+                    a handcrafted nginx/php website
+                </li>
+                <li>Various <a href="https://solidproject.org/about">SoLiD</a> projects
+                    (e.g. <a href="https://github.com/JordanShurmer/vue-solid-plugin">vue-solid-plugin</a>)
+                </li>
+                <li>Eleventy plugin for <a href="https://github.com/JordanShurmer/eleventy-plugin-nesting-toc">
+                    nested table of contents</a>
+                </li>
+                <li>A Noita <a href="https://gitlab.com/jshurmer/noita-hitless-runs-mod">
+                    mod</a> for attempting a hitless run</li>
+                <li>Making <a href="https://git.sr.ht/~jshurmer/the-game">
+                    a game<a> from scratch using Odin and Raylib</li>
+
+            </ul>
+
+        </section>
+
+
+        <section>
             <h2>Education</h2>
             <ul>
-                <li><strong>Bachelor of Science in Computer Science</strong> - University of Example (2012 - 2016)</li>
+                <li><strong>Bachelor of Science in Computer Science</strong> - University of Tennessee</li>
             </ul>
         </section>
 
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: JavaScript, Python, Java</li>
-                <li>Frameworks: React, Django, Node.js</li>
-                <li>Tools: Git, Docker, Jenkins</li>
-            </ul>
-        </section>
+        <p><small>I use neovim btw&hellip;</small></p>
 
-        <section>
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <div><strong>Email:</strong> john.doe@example.com</div>
-                <div><strong>Phone:</strong> (123) 456-7890</div>
-                <div><strong>LinkedIn:</strong> linkedin.com/in/johndoe</div>
-                <div><strong>GitHub:</strong> github.com/johndoe</div>
-            </div>
-        </section>
     </div>
 </body>
