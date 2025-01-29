@@ -3,6 +3,7 @@
 
     <head>
         <?php include "jordan/global_head.php"; ?>
+        <?php echo $head ?? "" ?>
     </head>
 
     <body class="">

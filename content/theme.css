@@ -5,6 +5,7 @@ colors, etc.
 
 :root {
     --bg-color: unset;
+    --bg-alt: #eee8c4;
     --color: #333;
     --color-link: unset;
     --shadow-color: rgba(0,0,0,.2)
@@ -13,7 +14,8 @@ colors, etc.
 @media (prefers-color-scheme: dark) {
     :root {
         --bg-color: #212124;
-        --color: #b1b0b0;
+        --bg-alt: #090909;
+        --color: #d6d6d6;
         --color-link: #889be0;
         --shadow-color: rgba(255,255,255,.2)
     }
