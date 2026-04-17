@@ -12,9 +12,9 @@ export DEBIAN_FRONTEND=noninteractive
 apt-get update -y -q
 apt-get upgrade -y -q
 
-# ── PHP 8.3 repo (handles both Ubuntu + Debian) ───────────────────────────────
+# ── PHP 8.4 repo (handles both Ubuntu + Debian) ───────────────────────────────
 
-if ! php8.3 --version &>/dev/null; then
+if ! php8.4 --version &>/dev/null; then
     . /etc/os-release
     if [ "$ID" = "ubuntu" ]; then
         log "Adding ondrej/php PPA (Ubuntu)..."
@@ -33,14 +33,14 @@ fi
 
 # ── Install packages ──────────────────────────────────────────────────────────
 
-log "Installing nginx, PHP 8.3..."
+log "Installing nginx, PHP 8.4..."
 apt-get install -y -q \
     nginx \
-    php8.3-fpm \
-    php8.3-mbstring \
-    php8.3-xml \
-    php8.3-curl \
-    php8.3-cli \
+    php8.4-fpm \
+    php8.4-mbstring \
+    php8.4-xml \
+    php8.4-curl \
+    php8.4-cli \
     ufw \
     fail2ban \
     unzip \
@@ -85,7 +85,7 @@ mkdir -p /usr/local/share/php/partials
 
 log "Configuring PHP-FPM..."
 
-PHP_INI="/etc/php/8.3/fpm/php.ini"
+PHP_INI="/etc/php/8.4/fpm/php.ini"
 sed -i 's/^upload_max_filesize.*/upload_max_filesize = 32M/' "$PHP_INI"
 sed -i 's/^post_max_size.*/post_max_size = 32M/'             "$PHP_INI"
 sed -i 's/^max_execution_time.*/max_execution_time = 60/'    "$PHP_INI"
@@ -93,8 +93,8 @@ sed -i 's/^max_execution_time.*/max_execution_time = 60/'    "$PHP_INI"
 # ── Services ──────────────────────────────────────────────────────────────────
 
 log "Enabling and starting services..."
-systemctl enable nginx php8.3-fpm fail2ban
-systemctl restart nginx php8.3-fpm fail2ban
+systemctl enable nginx php8.4-fpm fail2ban
+systemctl restart nginx php8.4-fpm fail2ban
 
 # ── Done ──────────────────────────────────────────────────────────────────────
 
@@ -103,7 +103,7 @@ log "✓ Provisioning complete."
 log ""
 log "  Installed:"
 nginx -v 2>&1 | sed 's/^/    /'
-php8.3 --version | head -1 | sed 's/^/    /'
+php8.4 --version | head -1 | sed 's/^/    /'
 log ""
 log "  !! ACTION REQUIRED: authenticate Tailscale, then lock down SSH:"
 log ""

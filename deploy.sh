@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SERVER="${SERVER:-root@hetzner-jordan}"  # Tailscale MagicDNS hostname
+SERVER="${SERVER:-root@hetzner-1}"  # Tailscale MagicDNS hostname
 REMOTE_WEBROOT="/var/www/jordan.shurmer.family/html"
 REMOTE_PARTIALS="/usr/local/share/php/partials/jordan"
 NGINX_AVAILABLE="/etc/nginx/sites-available/jordan.shurmer.family"
 NGINX_ENABLED="/etc/nginx/sites-enabled/jordan.shurmer.family"
+
+echo "→ Creating remote directories..."
+ssh "$SERVER" "mkdir -p '$REMOTE_WEBROOT' '$REMOTE_PARTIALS'"
 
 echo "→ Syncing content to $SERVER..."
 rsync -az --delete \
