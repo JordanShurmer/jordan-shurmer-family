@@ -1,0 +1,38 @@
+# Deploy jordan.shurmer.family on every master push. Skips doc-only changes.
+# Same server and same Tailscale OAuth client as the shurmer-family repo.
+# Auth is Tailscale SSH — no deploy key needed.
+# Requires secrets: TS_OAUTH_CLIENT_ID, TS_OAUTH_SECRET
+name: Deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths-ignore:
+      - "**.md"
+
+env:
+  DEPLOY_HOST: shurmer-family-2
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: prod
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Tailscale
+        uses: tailscale/github-action@v4
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:shurmer-family
+
+      - name: Trust host key
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan "$DEPLOY_HOST" >> ~/.ssh/known_hosts
+
+      - name: Deploy
+        run: SERVER="root@$DEPLOY_HOST" bash ./deploy.sh
