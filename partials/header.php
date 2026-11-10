@@ -22,6 +22,9 @@
                 <li class="<?= active('/media') ?> ">
                     <a href="/media">Media</a>
                 </li>
+                <li class="<?= active('/bookshelf') ?> ">
+                    <a href="/bookshelf">Bookshelf</a>
+                </li>
                 <li class="<?= active('/me') ?> ">
                     <a href="/me">About</a>
                 </li>
